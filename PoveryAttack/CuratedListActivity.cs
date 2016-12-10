@@ -117,7 +117,7 @@ namespace PoveryAttack
                 intent.PutExtra("id", resourceID);
                 StartActivity(intent);
             }
-            if (menuItemName == "Map")
+            if (menuItemName == "Maps")
             {
                 var org = curatedList[info.Position];
                 id = info.Position;
