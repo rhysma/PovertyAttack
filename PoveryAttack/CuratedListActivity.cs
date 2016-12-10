@@ -48,14 +48,7 @@ namespace PoveryAttack
             //this is the need information from the button they clicked on the previous activity
             string need = Intent.GetStringExtra("need") ?? "Data not available";
 
-            //setup the db connection
-            var db = new SQLiteConnection(dbPath);
-           // deleteAll();
-
-            //setup a table for an organization
-            db.CreateTable<ProviderOrg>();
-
-            //load the json data to populate a list of objects
+           //load the json data to populate a list of objects
             Android.Content.Res.AssetManager assets = this.Assets;
             using (StreamReader sr = new StreamReader(assets.Open("services.json")))
             {
@@ -63,14 +56,7 @@ namespace PoveryAttack
                 items = JsonConvert.DeserializeObject<List<ProviderOrg>>(json);
             }
 
-            //store the objects into the table
-            foreach (var record in items)
-            {
-                db.Insert(record);
-            }
-
-            var table = db.Table<ProviderOrg>();
-
+            
             //filter the list based on the need and demographic information
             var curatedNeed = from item in items
                           where item.NEED == need
@@ -137,6 +123,13 @@ namespace PoveryAttack
                 id = info.Position;
                 var providerAddress = $"{org.ADDRESS1} {org.ADDRESS2}, {org.CITY}, {org.STATE}, {org.ZIP}";
                 this.launchMap(providerAddress);
+            }
+            if(menuItemName == "Phone")
+            {
+                var org = curatedList[info.Position];
+                var uri = Android.Net.Uri.Parse("tel:"+org.PHONE);
+                var intent = new Intent(Intent.ActionDial, uri);
+                StartActivity(intent);
             }
            
 

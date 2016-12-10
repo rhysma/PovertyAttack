@@ -301,9 +301,11 @@ containing a value of this type.
         public static final int food=0x7f02002c;
         public static final int health=0x7f02002d;
         public static final int icon=0x7f02002e;
-        public static final int shelter=0x7f02002f;
-        public static final int transportation=0x7f020030;
-        public static final int website=0x7f020031;
+        public static final int map=0x7f02002f;
+        public static final int phone=0x7f020030;
+        public static final int shelter=0x7f020031;
+        public static final int transportation=0x7f020032;
+        public static final int website=0x7f020033;
     }
     public static final class id {
         public static final int address1Box=0x7f080033;
