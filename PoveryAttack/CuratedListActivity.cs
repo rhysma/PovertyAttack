@@ -133,9 +133,10 @@ namespace PoveryAttack
             }
             if (menuItemName == "Map")
             {
-                //ProviderOrg contactName = curatedList[info.Position];
-                //id = info.Position;
-                //var providerAddress = $"{contac}";
+                var org = curatedList[info.Position];
+                id = info.Position;
+                var providerAddress = $"{org.ADDRESS1} {org.ADDRESS2}, {org.CITY}, {org.STATE}, {org.ZIP}";
+                this.launchMap(providerAddress);
             }
            
 
