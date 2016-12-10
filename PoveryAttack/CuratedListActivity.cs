@@ -50,7 +50,7 @@ namespace PoveryAttack
 
             //setup the db connection
             var db = new SQLiteConnection(dbPath);
-            deleteAll();
+           // deleteAll();
 
             //setup a table for an organization
             db.CreateTable<ProviderOrg>();
@@ -121,17 +121,43 @@ namespace PoveryAttack
             var index = item.ItemId;
             var menuItem = Resources.GetStringArray(Resource.Array.menu);
             var menuItemName = menuItem[index];
-            ProviderOrg contactName = curatedList[info.Position];
-            id = info.Position;
-            int resourceID = contactName.RESOURCEID;
-            var intent = new Intent(this, typeof(ProviderDetailActivity));
+            if (menuItemName == "Details")
+            {
+                ProviderOrg contactName = curatedList[info.Position];
+                id = info.Position;
+                int resourceID = contactName.RESOURCEID;
+                var intent = new Intent(this, typeof(ProviderDetailActivity));
 
-            intent.PutExtra("id", resourceID);
-            StartActivity(intent);
+                intent.PutExtra("id", resourceID);
+                StartActivity(intent);
+            }
+            if (menuItemName == "Map")
+            {
+                //ProviderOrg contactName = curatedList[info.Position];
+                //id = info.Position;
+                //var providerAddress = $"{contac}";
+            }
+           
 
             //Toast.MakeText(this, string.Format("Selected {0} for item {1}", menuItemName, contactName), ToastLength.Short).Show();
 
             return true;
+        }
+
+        /// <summary>
+        /// Open a GoogleMaps instance
+        /// </summary>
+        /// <param name="providerAddress"></param>
+        public void launchMap(string providerAddress)
+        {
+            //Encode the address
+            string encodedAddress = "geo:0,0?q=" + Android.Net.Uri.Encode(providerAddress);
+            //Set the variable for the map intent
+            var geoUri = Android.Net.Uri.Parse(encodedAddress);
+            //Declare the map intent
+            var mapIntent = new Intent(Intent.ActionView, geoUri);
+            //Start the activity and open the maps application
+            StartActivity(mapIntent);
         }
 
 
