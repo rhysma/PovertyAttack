@@ -117,14 +117,14 @@ namespace PoveryAttack
                 intent.PutExtra("id", resourceID);
                 StartActivity(intent);
             }
-            if (menuItemName == "Map")
+            if (menuItemName == "Get Directions")
             {
                 var org = curatedList[info.Position];
                 id = info.Position;
                 var providerAddress = $"{org.ADDRESS1} {org.ADDRESS2}, {org.CITY}, {org.STATE}, {org.ZIP}";
                 this.launchMap(providerAddress);
             }
-            if(menuItemName == "Phone")
+            if(menuItemName == "Phone Call")
             {
                 var org = curatedList[info.Position];
                 var uri = Android.Net.Uri.Parse("tel:"+org.PHONE);
