@@ -57,6 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
+    <None Include="Given Resources\directory 2016 - full directory.json" />
+    <None Include="Given Resources\directory 2016 - homeless services.json" />
+    <None Include="Given Resources\Directory spreadsheet Dec 2016 - full directory.csv" />
+    <None Include="Given Resources\Directory spreadsheet Dec 2016 - homeless services.csv" />
+    <None Include="Given Resources\Directory spreadsheet Dec 2016.xlsx" />
+    <None Include="Given Resources\MOFunding.pdf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
