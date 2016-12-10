@@ -89,12 +89,12 @@ namespace PoveryAttack
                 ImageButton emailButton = FindViewById<ImageButton>(Resource.Id.emailButton);
                 if (r.EMAIL == "")
                 {
-                    fbButton.Enabled = false;
+                    emailButton.Enabled = false;
                 }
                 emailButton.Click += delegate
                 {
                     var email = new Intent(Android.Content.Intent.ActionSend);
-                    email.PutExtra(Android.Content.Intent.ExtraCc, new string[] { r.EMAIL });
+                    email.PutExtra(Android.Content.Intent.ExtraEmail, new string[] { r.EMAIL });
 
                     email.PutExtra(Android.Content.Intent.ExtraSubject, "Email Message from App");
                     email.SetType("message/rfc822");
