@@ -50,23 +50,54 @@ namespace PoveryAttack
 
         }
 
+        
         public override bool OnContextItemSelected(IMenuItem item)
         {
             var info = (AdapterView.AdapterContextMenuInfo)item.MenuInfo;
             var index = item.ItemId;
             var menuItem = Resources.GetStringArray(Resource.Array.menu);
             var menuItemName = menuItem[index];
-            ProviderOrg contactName = items[info.Position];
-            id = info.Position;
-            int resourceID = contactName.RESOURCEID;
-            var intent = new Intent(this, typeof(ProviderDetailActivity));
+            if (menuItemName == "Details")
+            {
+                ProviderOrg contactName = items[info.Position];
+                id = info.Position;
+                int resourceID = contactName.RESOURCEID;
+                var intent = new Intent(this, typeof(ProviderDetailActivity));
 
-            intent.PutExtra("id", resourceID);
-            StartActivity(intent);
-
-            //Toast.MakeText(this, string.Format("Selected {0} for item {1}", menuItemName, contactName), ToastLength.Short).Show();
-
+                intent.PutExtra("id", resourceID);
+                StartActivity(intent);
+            }
+            if (menuItemName == "Get Directions")
+            {
+                var org = items[info.Position];
+                id = info.Position;
+                var providerAddress = $"{org.ADDRESS1} {org.ADDRESS2}, {org.CITY}, {org.STATE}, {org.ZIP}";
+                this.launchMap(providerAddress);
+            }
+            if (menuItemName == "Phone Call")
+            {
+                var org = items[info.Position];
+                var uri = Android.Net.Uri.Parse("tel:" + org.PHONE);
+                var intent = new Intent(Intent.ActionDial, uri);
+                StartActivity(intent);
+            }
             return true;
+        }
+
+        /// <summary>
+        /// Open a GoogleMaps instance
+        /// </summary>
+        /// <param name="providerAddress"></param>
+        public void launchMap(string providerAddress)
+        {
+            //Encode the address
+            string encodedAddress = "geo:0,0?q=" + Android.Net.Uri.Encode(providerAddress);
+            //Set the variable for the map intent
+            var geoUri = Android.Net.Uri.Parse(encodedAddress);
+            //Declare the map intent
+            var mapIntent = new Intent(Intent.ActionView, geoUri);
+            //Start the activity and open the maps application
+            StartActivity(mapIntent);
         }
 
         public override void OnCreateContextMenu(IContextMenu menu, View v, IContextMenuContextMenuInfo menuInfo)
