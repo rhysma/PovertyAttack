@@ -6,8 +6,7 @@
 
   <string-array name="menu">
     <item>Details</item>
-    <item>Get Directions</item>
-    <item>Phone Call</item>
+    <item>Maps</item>
   </string-array>
 
 </resources>
