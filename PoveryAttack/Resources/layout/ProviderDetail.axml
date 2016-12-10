@@ -14,8 +14,7 @@
             p1:id="@+id/providerNameBox"
             p1:layout_marginRight="275.0dp"
             p1:layout_width="373.0dp"
-            p1:layout_height="51.5dp"
-            p1:layout_marginLeft="5dp" />
+            p1:layout_height="51.5dp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow2">
@@ -23,8 +22,7 @@
             p1:text="Location"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_column="0"
-            p1:id="@+id/textView31"
-            p1:layout_marginLeft="5dp" />
+            p1:id="@+id/textView31" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow3">
@@ -32,8 +30,15 @@
             p1:text="Address1"
             p1:textAppearance="?android:attr/textAppearanceSmall"
             p1:layout_column="0"
-            p1:id="@+id/address1Box"
-            p1:layout_marginLeft="5dp" />
+            p1:id="@+id/address1Box" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow4">
+        <TextView
+            p1:text="Address2"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_column="0"
+            p1:id="@+id/address2Box" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow5">
@@ -41,8 +46,7 @@
             p1:text="City, State ZIP"
             p1:textAppearance="?android:attr/textAppearanceSmall"
             p1:layout_column="0"
-            p1:id="@+id/cityBox"
-            p1:layout_marginLeft="5dp" />
+            p1:id="@+id/cityBox" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow6">
@@ -50,8 +54,7 @@
             p1:text="County"
             p1:textAppearance="?android:attr/textAppearanceSmall"
             p1:layout_column="0"
-            p1:id="@+id/countyBox"
-            p1:layout_marginLeft="5dp" />
+            p1:id="@+id/countyBox" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow7">
@@ -59,8 +62,7 @@
             p1:text="Phone"
             p1:textAppearance="?android:attr/textAppearanceSmall"
             p1:layout_column="0"
-            p1:id="@+id/phoneBox"
-            p1:layout_marginLeft="5dp" />
+            p1:id="@+id/phoneBox" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow8">
@@ -90,33 +92,13 @@
             p1:layout_margin="10px" />
     </TableRow>
     <TableRow
-        p1:id="@+id/tableRow12">
-        <ImageButton
-            p1:src="@drawable/phone"
-            p1:layout_width="0dp"
-            p1:layout_height="wrap_content"
-            p1:layout_gravity="left|center"
-            p1:layout_weight="1"
-            p1:id="@+id/phoneButton"
-            p1:layout_margin="10px" />
-        <ImageButton
-            p1:src="@drawable/map"
-            p1:layout_width="0dp"
-            p1:layout_height="wrap_content"
-            p1:layout_gravity="right|center"
-            p1:layout_weight="1"
-            p1:id="@+id/mapsButton"
-            p1:layout_margin="10px" />
-    </TableRow>
-    <TableRow
         p1:id="@+id/tableRow9">
         <TextView
             p1:text="Services Provided"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_column="0"
             p1:id="@+id/textView31"
-            p1:layout_width="343.5dp"
-            p1:layout_marginLeft="5dp" />
+            p1:layout_width="343.5dp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow10">
@@ -128,7 +110,6 @@
             p1:layout_marginRight="300.0dp"
             p1:layout_width="336.0dp"
             p1:layout_height="175.5dp"
-            p1:layout_marginBottom="125.0dp"
-            p1:layout_marginLeft="20dp" />
+            p1:layout_marginBottom="125.0dp" />
     </TableRow>
 </TableLayout>

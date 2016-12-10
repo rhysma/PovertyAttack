@@ -309,6 +309,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int address1Box=0x7f080033;
+        public static final int address2Box=0x7f080034;
         public static final int adjust_height=0x7f080005;
         public static final int adjust_width=0x7f080006;
         public static final int auto=0x7f08000a;
@@ -324,26 +325,24 @@ containing a value of this type.
         public static final int checkTrans=0x7f080016;
         public static final int checkUninsured=0x7f080024;
         public static final int checkVeteran=0x7f080020;
-        public static final int cityBox=0x7f080034;
-        public static final int countyBox=0x7f080035;
+        public static final int cityBox=0x7f080035;
+        public static final int countyBox=0x7f080036;
         public static final int dark=0x7f08000b;
-        public static final int emailButton=0x7f080039;
-        public static final int fbButton=0x7f080037;
+        public static final int emailButton=0x7f08003a;
+        public static final int fbButton=0x7f080038;
         public static final int foodButton=0x7f08002c;
         public static final int healthButton=0x7f08002e;
         public static final int hybrid=0x7f080000;
         public static final int icon_only=0x7f080007;
         public static final int light=0x7f08000c;
-        public static final int mapsButton=0x7f08003b;
         public static final int nextButton=0x7f08002a;
         public static final int none=0x7f080001;
         public static final int normal=0x7f080002;
-        public static final int phoneBox=0x7f080036;
-        public static final int phoneButton=0x7f08003a;
+        public static final int phoneBox=0x7f080037;
         public static final int providerListView=0x7f08000d;
         public static final int providerNameBox=0x7f080031;
         public static final int satellite=0x7f080003;
-        public static final int servicesBox=0x7f08003c;
+        public static final int servicesBox=0x7f08003b;
         public static final int shelterButton=0x7f08002d;
         public static final int standard=0x7f080008;
         public static final int tableLayout1=0x7f08000e;
@@ -367,7 +366,7 @@ containing a value of this type.
         public static final int textView31=0x7f080032;
         public static final int transpoButton=0x7f08002f;
         public static final int viewAllButton=0x7f080030;
-        public static final int websiteButton=0x7f080038;
+        public static final int websiteButton=0x7f080039;
         public static final int wide=0x7f080009;
     }
     public static final class integer {
