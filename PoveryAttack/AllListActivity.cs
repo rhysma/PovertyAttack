@@ -20,7 +20,7 @@ namespace PoveryAttack
     {
         //path string for the database file
         string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "providers.db3");
-        List<Data.ProviderOrg> items;
+        List<ProviderOrg> items;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             RequestWindowFeature(WindowFeatures.NoTitle);
@@ -33,14 +33,14 @@ namespace PoveryAttack
             deleteAll();
 
             //setup a table for an organization
-            db.CreateTable<Data.ProviderOrg>();
+            db.CreateTable<ProviderOrg>();
 
             //load the json data to populate a list of objects
             Android.Content.Res.AssetManager assets = this.Assets;
             using (StreamReader sr = new StreamReader(assets.Open("services.json")))
             {
                 string json = sr.ReadToEnd();
-                items = JsonConvert.DeserializeObject<List<Data.ProviderOrg>>(json);
+                items = JsonConvert.DeserializeObject<List<ProviderOrg>>(json);
             }
 
             //store the objects into the table

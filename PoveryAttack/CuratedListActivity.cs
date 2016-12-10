@@ -20,8 +20,10 @@ namespace PoveryAttack
     {
         //path string for the database file
         string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "providers.db3");
-        List<Data.ProviderOrg> items;
-        List<Data.ProviderOrg> curatedList;
+        List<ProviderOrg> items;
+        List<ProviderOrg> curatedList;
+        IEnumerable<ProviderOrg> curatedDemo;
+        int id;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -51,22 +53,23 @@ namespace PoveryAttack
             deleteAll();
 
             //setup a table for an organization
-            db.CreateTable<Data.ProviderOrg>();
+            db.CreateTable<ProviderOrg>();
 
             //load the json data to populate a list of objects
             Android.Content.Res.AssetManager assets = this.Assets;
             using (StreamReader sr = new StreamReader(assets.Open("services.json")))
             {
                 string json = sr.ReadToEnd();
-                items = JsonConvert.DeserializeObject<List<Data.ProviderOrg>>(json);
+                items = JsonConvert.DeserializeObject<List<ProviderOrg>>(json);
             }
 
             //store the objects into the table
-            foreach (var item in items)
+            foreach (var record in items)
             {
-                db.Insert(item);
+                db.Insert(record);
             }
 
+            var table = db.Table<ProviderOrg>();
 
             //filter the list based on the need and demographic information
             var curatedNeed = from item in items
@@ -74,9 +77,9 @@ namespace PoveryAttack
                           select item;
 
             //TO DO:if they don't check any of the boxes on the previous screen we need to not do this step
-            var curatedDemo = curatedNeed.Where(u => demoChecks.Contains(u.DEMOGRAPHICS));
+            curatedDemo = curatedNeed.Where(u => demoChecks.Contains(u.DEMOGRAPHICS));
 
-            curatedList = new List<Data.ProviderOrg>();
+            curatedList = new List<ProviderOrg>();
             foreach (var provider in curatedDemo)
             {
                 curatedList.Add(provider);
@@ -89,7 +92,51 @@ namespace PoveryAttack
             //assign the adapter
             lv.Adapter = new HomeScreenAdapter(this, curatedList);
 
+            
+
+            //we have to register the listview for context menu
+            //so that the system knows the behavior to use
+            RegisterForContextMenu(lv);
         }
+
+        public override void OnCreateContextMenu(IContextMenu menu, View v, IContextMenuContextMenuInfo menuInfo)
+        {
+            if (v.Id == Resource.Id.providerListView)
+            {
+                var info = (AdapterView.AdapterContextMenuInfo)menuInfo;
+                menu.SetHeaderTitle("Choose Action");
+                var menuItems = Resources.GetStringArray(Resource.Array.menu);
+                for (int i = 0; i < menuItems.Length; i++)
+                {
+                    menu.Add(Menu.None, i, i, menuItems[i]);
+                }
+            }
+        }
+
+        public override bool OnContextItemSelected(IMenuItem item)
+        {
+            var info = (AdapterView.AdapterContextMenuInfo)item.MenuInfo;
+            var index = item.ItemId;
+            var menuItem = Resources.GetStringArray(Resource.Array.menu);
+            var menuItemName = menuItem[index];
+            ProviderOrg contactName = curatedList[info.Position];
+            id = info.Position;
+
+            var db = new SQLiteConnection(dbPath);
+            var table = db.Table<ProviderOrg>();
+            var record = table.Where(v => v.RESOURCEID == contactName.RESOURCEID).FirstOrDefault();
+
+
+            int resourceID = contactName.RESOURCEID;
+            var intent = new Intent(this, typeof(ProviderDetailActivity));
+            intent.PutExtra("id", resourceID);
+            StartActivity(intent);
+
+            //Toast.MakeText(this, string.Format("Selected {0} for item {1}", menuItemName, contactName), ToastLength.Short).Show();
+
+            return true;
+        }
+
 
         //a method that deletes all of the records in the table
         //for use in testing the app so we don't fill the DB with

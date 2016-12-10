@@ -8,6 +8,9 @@
 package poveryattack.poveryattack;
 
 public final class R {
+    public static final class array {
+        public static final int menu=0x7f070000;
+    }
     public static final class attr {
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
@@ -303,66 +306,66 @@ containing a value of this type.
         public static final int website=0x7f020031;
     }
     public static final class id {
-        public static final int address1Box=0x7f070033;
-        public static final int address2Box=0x7f070034;
-        public static final int adjust_height=0x7f070005;
-        public static final int adjust_width=0x7f070006;
-        public static final int auto=0x7f07000a;
-        public static final int checkDisabled=0x7f070022;
-        public static final int checkFemale=0x7f070014;
-        public static final int checkHomeless=0x7f070028;
-        public static final int checkLGBT=0x7f070026;
-        public static final int checkMale=0x7f070012;
-        public static final int checkMinor=0x7f07001a;
-        public static final int checkMinorChild=0x7f07001e;
-        public static final int checkPregnant=0x7f07001c;
-        public static final int checkSenior=0x7f070018;
-        public static final int checkTrans=0x7f070016;
-        public static final int checkUninsured=0x7f070024;
-        public static final int checkVeteran=0x7f070020;
-        public static final int cityBox=0x7f070035;
-        public static final int countyBox=0x7f070036;
-        public static final int dark=0x7f07000b;
-        public static final int emailButton=0x7f07003a;
-        public static final int fbButton=0x7f070038;
-        public static final int foodButton=0x7f07002c;
-        public static final int healthButton=0x7f07002e;
-        public static final int hybrid=0x7f070000;
-        public static final int icon_only=0x7f070007;
-        public static final int light=0x7f07000c;
-        public static final int nextButton=0x7f07002a;
-        public static final int none=0x7f070001;
-        public static final int normal=0x7f070002;
-        public static final int phoneBox=0x7f070037;
-        public static final int providerListView=0x7f07000d;
-        public static final int providerNameBox=0x7f070031;
-        public static final int satellite=0x7f070003;
-        public static final int servicesBox=0x7f07003b;
-        public static final int shelterButton=0x7f07002d;
-        public static final int standard=0x7f070008;
-        public static final int tableLayout1=0x7f07000e;
-        public static final int tableRow1=0x7f07000f;
-        public static final int tableRow10=0x7f070021;
-        public static final int tableRow11=0x7f070023;
-        public static final int tableRow12=0x7f070025;
-        public static final int tableRow13=0x7f070027;
-        public static final int tableRow14=0x7f070029;
-        public static final int tableRow2=0x7f070011;
-        public static final int tableRow3=0x7f070013;
-        public static final int tableRow4=0x7f070015;
-        public static final int tableRow5=0x7f070017;
-        public static final int tableRow6=0x7f070019;
-        public static final int tableRow7=0x7f07001b;
-        public static final int tableRow8=0x7f07001d;
-        public static final int tableRow9=0x7f07001f;
-        public static final int terrain=0x7f070004;
-        public static final int textView10=0x7f070010;
-        public static final int textView3=0x7f07002b;
-        public static final int textView31=0x7f070032;
-        public static final int transpoButton=0x7f07002f;
-        public static final int viewAllButton=0x7f070030;
-        public static final int websiteButton=0x7f070039;
-        public static final int wide=0x7f070009;
+        public static final int address1Box=0x7f080033;
+        public static final int address2Box=0x7f080034;
+        public static final int adjust_height=0x7f080005;
+        public static final int adjust_width=0x7f080006;
+        public static final int auto=0x7f08000a;
+        public static final int checkDisabled=0x7f080022;
+        public static final int checkFemale=0x7f080014;
+        public static final int checkHomeless=0x7f080028;
+        public static final int checkLGBT=0x7f080026;
+        public static final int checkMale=0x7f080012;
+        public static final int checkMinor=0x7f08001a;
+        public static final int checkMinorChild=0x7f08001e;
+        public static final int checkPregnant=0x7f08001c;
+        public static final int checkSenior=0x7f080018;
+        public static final int checkTrans=0x7f080016;
+        public static final int checkUninsured=0x7f080024;
+        public static final int checkVeteran=0x7f080020;
+        public static final int cityBox=0x7f080035;
+        public static final int countyBox=0x7f080036;
+        public static final int dark=0x7f08000b;
+        public static final int emailButton=0x7f08003a;
+        public static final int fbButton=0x7f080038;
+        public static final int foodButton=0x7f08002c;
+        public static final int healthButton=0x7f08002e;
+        public static final int hybrid=0x7f080000;
+        public static final int icon_only=0x7f080007;
+        public static final int light=0x7f08000c;
+        public static final int nextButton=0x7f08002a;
+        public static final int none=0x7f080001;
+        public static final int normal=0x7f080002;
+        public static final int phoneBox=0x7f080037;
+        public static final int providerListView=0x7f08000d;
+        public static final int providerNameBox=0x7f080031;
+        public static final int satellite=0x7f080003;
+        public static final int servicesBox=0x7f08003b;
+        public static final int shelterButton=0x7f08002d;
+        public static final int standard=0x7f080008;
+        public static final int tableLayout1=0x7f08000e;
+        public static final int tableRow1=0x7f08000f;
+        public static final int tableRow10=0x7f080021;
+        public static final int tableRow11=0x7f080023;
+        public static final int tableRow12=0x7f080025;
+        public static final int tableRow13=0x7f080027;
+        public static final int tableRow14=0x7f080029;
+        public static final int tableRow2=0x7f080011;
+        public static final int tableRow3=0x7f080013;
+        public static final int tableRow4=0x7f080015;
+        public static final int tableRow5=0x7f080017;
+        public static final int tableRow6=0x7f080019;
+        public static final int tableRow7=0x7f08001b;
+        public static final int tableRow8=0x7f08001d;
+        public static final int tableRow9=0x7f08001f;
+        public static final int terrain=0x7f080004;
+        public static final int textView10=0x7f080010;
+        public static final int textView3=0x7f08002b;
+        public static final int textView31=0x7f080032;
+        public static final int transpoButton=0x7f08002f;
+        public static final int viewAllButton=0x7f080030;
+        public static final int websiteButton=0x7f080039;
+        public static final int wide=0x7f080009;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f050000;

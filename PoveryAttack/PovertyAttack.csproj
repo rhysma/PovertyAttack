@@ -107,7 +107,7 @@
     <Compile Include="Data\NonMedicalServices.cs" />
     <Compile Include="Data\Organization.cs" />
     <Compile Include="Data\Project.cs" />
-    <Compile Include="Data\ProviderOrg.cs" />
+    <Compile Include="ProviderOrg.cs" />
     <Compile Include="Data\ServiceExemptions.cs" />
     <Compile Include="Data\ServicePrerequisites.cs" />
     <Compile Include="Data\ServiceTimeLocation.cs" />

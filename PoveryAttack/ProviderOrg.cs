@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 using SQLite;
 
-namespace PoveryAttack.Data
+namespace PoveryAttack
 {
     public class ProviderOrg
     {
@@ -39,7 +39,7 @@ namespace PoveryAttack.Data
         public string TWITTER;
         public string SERVICES;
         public string NEED;
-        public string DEMOGRAPHICS;
+        public string[] DEMOGRAPHICS;
 
         public override string ToString()
         {
