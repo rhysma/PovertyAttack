@@ -19,8 +19,10 @@ namespace PoveryAttack
     public class CuratedListActivity : Activity
     {
         //path string for the database file
+        string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "providers.db3");
         List<ProviderOrg> items;
         List<ProviderOrg> curatedList;
+        IEnumerable<ProviderOrg> curatedDemo;
         int id;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -46,6 +48,12 @@ namespace PoveryAttack
             //this is the need information from the button they clicked on the previous activity
             string need = Intent.GetStringExtra("need") ?? "Data not available";
 
+            //setup the db connection
+            var db = new SQLiteConnection(dbPath);
+           // deleteAll();
+
+            //setup a table for an organization
+            db.CreateTable<ProviderOrg>();
 
             //load the json data to populate a list of objects
             Android.Content.Res.AssetManager assets = this.Assets;
@@ -54,6 +62,14 @@ namespace PoveryAttack
                 string json = sr.ReadToEnd();
                 items = JsonConvert.DeserializeObject<List<ProviderOrg>>(json);
             }
+
+            //store the objects into the table
+            foreach (var record in items)
+            {
+                db.Insert(record);
+            }
+
+            var table = db.Table<ProviderOrg>();
 
             //filter the list based on the need and demographic information
             var curatedNeed = from item in items
@@ -105,19 +121,53 @@ namespace PoveryAttack
             var index = item.ItemId;
             var menuItem = Resources.GetStringArray(Resource.Array.menu);
             var menuItemName = menuItem[index];
-            ProviderOrg contactName = curatedList[info.Position];
-            id = info.Position;
-            int resourceID = contactName.RESOURCEID;
-            var intent = new Intent(this, typeof(ProviderDetailActivity));
+            if (menuItemName == "Details")
+            {
+                ProviderOrg contactName = curatedList[info.Position];
+                id = info.Position;
+                int resourceID = contactName.RESOURCEID;
+                var intent = new Intent(this, typeof(ProviderDetailActivity));
 
-            intent.PutExtra("id", resourceID);
-            StartActivity(intent);
+                intent.PutExtra("id", resourceID);
+                StartActivity(intent);
+            }
+            if (menuItemName == "Map")
+            {
+                //ProviderOrg contactName = curatedList[info.Position];
+                //id = info.Position;
+                //var providerAddress = $"{contac}";
+            }
+           
 
             //Toast.MakeText(this, string.Format("Selected {0} for item {1}", menuItemName, contactName), ToastLength.Short).Show();
 
             return true;
         }
 
+        /// <summary>
+        /// Open a GoogleMaps instance
+        /// </summary>
+        /// <param name="providerAddress"></param>
+        public void launchMap(string providerAddress)
+        {
+            //Encode the address
+            string encodedAddress = "geo:0,0?q=" + Android.Net.Uri.Encode(providerAddress);
+            //Set the variable for the map intent
+            var geoUri = Android.Net.Uri.Parse(encodedAddress);
+            //Declare the map intent
+            var mapIntent = new Intent(Intent.ActionView, geoUri);
+            //Start the activity and open the maps application
+            StartActivity(mapIntent);
+        }
 
+
+        //a method that deletes all of the records in the table
+        //for use in testing the app so we don't fill the DB with
+        //records every time we run
+        public void deleteAll()
+        {
+            var db = new SQLiteConnection(dbPath);
+            db.Execute("delete from ProviderOrg");
+        }
     }
 }
