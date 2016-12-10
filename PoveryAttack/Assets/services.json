@@ -1,4 +1,6 @@
-﻿[
+﻿// [ "Male", "Female", "Trans", "Senior", "Minor", "Pregnant", "Children", "Vet", "Disabled", "Uninsured", "LGBT", "Homeless" ]
+
+[
   {
     "ADDRESS1": "2411 W. Catalpa St.",
     "RESOURCEID": 33205,
@@ -20,7 +22,7 @@
     "TWITTER": "",
     "SERVICES": "Residential substance abuse treatment center for women participating in the Comprehensive Substance Treatment and Rehabilitation program (CSTAR) for women and their children.",
     "NEED": "Health",
-    "DEMOGRAPHICS": "Female"
+    "DEMOGRAPHICS": [ "Female", "Minor", "Pregnant", "Children" ]
   },
   {
     "ADDRESS1": "1370 E. Primrose St., Suite A",
@@ -43,7 +45,7 @@
     "TWITTER": "",
     "SERVICES": "Administers Greene County tax programs for persons with developmental disabilities.",
     "NEED": "Health",
-    "DEMOGRAPHICS": "Male"
+    "DEMOGRAPHICS": [ "Disabled" ]
   },
   {
     "ADDRESS1": "1310 E. Kingsley, Suite C",
@@ -127,7 +129,9 @@
     "FACEBOOKNAME": "Ambassadors for Children",
     "FACEBOOKURL": "https://www.facebook.com/ambassadorsforchildren",
     "TWITTER": "",
-    "SERVICES": "Addresses the needs of abused and neglected children through the provision of new clothing, tutoring, hygiene items and self-esteem enhancing activities for foster children; matches child protective caseworkers with community groups. Provides Christmas presents for kids in foster care, and operates Prom Closet. An operating agency of the Council of Churches of the Ozarks."
+    "SERVICES": "Addresses the needs of abused and neglected children through the provision of new clothing, tutoring, hygiene items and self-esteem enhancing activities for foster children; matches child protective caseworkers with community groups. Provides Christmas presents for kids in foster care, and operates Prom Closet. An operating agency of the Council of Churches of the Ozarks.",
+    "NEED": "Shelter",
+    "DEMOGRAPHICS": [ "Minor" ]
   },
   {
     "ADDRESS1": "2740 E. Pythian St.",
@@ -148,7 +152,9 @@
     "FACEBOOKNAME": "",
     "FACEBOOKURL": "",
     "TWITTER": "",
-    "SERVICES": "Provides residential care for abandoned, abused or neglected girls in the area, most of whom are in the custody of the Family Services Division."
+    "SERVICES": "Provides residential care for abandoned, abused or neglected girls in the area, most of whom are in the custody of the Family Services Division.",
+    "NEED": "Shelter",
+    "DEMOGRAPHICS":  [ "Female", "Minor", "Children" ] 
   },
   {
     "ADDRESS1": "2740 E. Pythian St.",
@@ -169,7 +175,9 @@
     "FACEBOOKNAME": "",
     "FACEBOOKURL": "",
     "TWITTER": "",
-    "SERVICES": "Supports Ashley House which provides residential care for abandoned, abused or neglected girls in the area."
+    "SERVICES": "Supports Ashley House which provides residential care for abandoned, abused or neglected girls in the area.",
+    "NEED": "Shelter",
+    "DEMOGRAPHICS":  [ "Female", "Minor", "Children" ]
   },
   {
     "ADDRESS1": "3372 W. Battlefield Road",
@@ -211,7 +219,9 @@
     "FACEBOOKNAME": "",
     "FACEBOOKURL": "",
     "TWITTER": "",
-    "SERVICES": "A drop-in center that offers counseling to the homeless, the mentally ill and the general public."
+    "SERVICES": "A drop-in center that offers counseling to the homeless, the mentally ill and the general public.",
+    "NEED": "Health",
+    "DEMOGRAPHICS": [ "Male", "Female", "Trans", "Senior", "Minor", "Pregnant", "Children", "Vet", "Disabled", "Uninsured", "LGBT", "Homeless" ]
   },
   {
     "ADDRESS1": "1410 N. Fremont Ave.",
@@ -274,7 +284,9 @@
     "FACEBOOKNAME": "",
     "FACEBOOKURL": "",
     "TWITTER": "",
-    "SERVICES": "Provides a comprehensive array of behavioral health treatment, rehabilitation and education services; operates a suicide prevention hotline that serves Polk, Greene, Webster, Christian, Stone and Taney counties in Missouri."
+    "SERVICES": "Provides a comprehensive array of behavioral health treatment, rehabilitation and education services; operates a suicide prevention hotline that serves Polk, Greene, Webster, Christian, Stone and Taney counties in Missouri.",
+    "NEED": "Health",
+    "DEMOGRAPHICS": [ "Male", "Female", "Trans", "Senior", "Minor", "Pregnant", "Children", "Vet", "Disabled", "Uninsured", "LGBT", "Homeless" ]
   },
   {
     "ADDRESS1": "411 N. Sherman Parkway",
@@ -295,7 +307,9 @@
     "FACEBOOKNAME": "Care to Learn",
     "FACEBOOKURL": "https://www.facebook.com/caretolearnfund",
     "TWITTER": "@caretolearn",
-    "SERVICES": "Provides emergency services in the area of health, hunger and hygiene. Services are provided to students in Springfield, Bolivar, Clever, Fordland, Logan-Rogersville, Ozark, Nixa, Republic and Willard Public Schools and Ozarks Technical Community College."
+    "SERVICES": "Provides emergency services in the area of health, hunger and hygiene. Services are provided to students in Springfield, Bolivar, Clever, Fordland, Logan-Rogersville, Ozark, Nixa, Republic and Willard Public Schools and Ozarks Technical Community College.",
+    "NEED": "Health",
+    "DEMOGRAPHICS": [ "Male", "Female", "Trans", "Minor", "Pregnant", "Children", "Vet", "Disabled", "Uninsured", "LGBT", "Homeless" ]
   },
   {
     "ADDRESS1": "164 Corporate Drive, Suite T",
@@ -527,7 +541,9 @@
     "FACEBOOKNAME": "",
     "FACEBOOKURL": "",
     "TWITTER": "",
-    "SERVICES": "Provides paratransit service for disabled people who are unable to access the regular city bus service."
+    "SERVICES": "Provides paratransit service for disabled people who are unable to access the regular city bus service.",
+    "NEED": "Transportation",
+    "DEMOGRAPHICS": [ "Disabled"]
   },
   {
     "ADDRESS1": "1505 N. Boonville",
@@ -548,7 +564,9 @@
     "FACEBOOKNAME": "City Utilities of Springfield, MO",
     "FACEBOOKURL": "https://www.facebook.com/cityutilities.net",
     "TWITTER": "@cutransit",
-    "SERVICES": "Public transit system for the city of Springfield."
+    "SERVICES": "Public transit system for the city of Springfield.",
+    "NEED": "Transportation",
+    "DEMOGRAPHICS": [ "Male", "Female", "Trans", "Senior", "Minor", "Pregnant", "Children", "Vet", "Disabled", "Uninsured", "LGBT", "Homeless" ]
   },
   {
     "ADDRESS1": "425 E. Trafficway",
@@ -800,7 +818,9 @@
     "FACEBOOKNAME": "Daybreak Adult Day Care",
     "FACEBOOKURL": "https://www.facebook.com/pages/Daybreak-Adult-Day-Care/140140399351694",
     "TWITTER": "",
-    "SERVICES": "Provides door-through-door, non-emergency medical transportation services benefiting elderly or disabled individuals. Part of Daybreak Adult Day Care."
+    "SERVICES": "Provides door-through-door, non-emergency medical transportation services benefiting elderly or disabled individuals. Part of Daybreak Adult Day Care.",
+    "NEED": "Transportation",
+    "DEMOGRAPHICS":  [ "Senior", "Disabled" ]
   },
   {
     "ADDRESS1": "1370 E. Primrose Ave., Suite A",
@@ -1704,6 +1724,8 @@
     "FACEBOOKURL": "https://www.facebook.com/pages/Ozarks-Transportation-Organization/259683794058148",
     "TWITTER": "@giveusyourinput",
     "SERVICES": "Offers information on wise commuting choices that reduce traffic congestion, pollution, commuting stress and saves money; provides carpool matches on a map using custom schedules and driving routes."
+    "NEED": "Transportation",
+    "DEMOGRAPHICS":  [ "Male", "Female", "Trans", "Senior", "Minor", "Pregnant", "Children", "Vet", "Disabled", "Uninsured", "LGBT", "Homeless" ] 
   },
   {
     "ADDRESS1": "614 South Ave.",
@@ -1745,7 +1767,9 @@
     "FACEBOOKNAME": "Ozarks Food Harvest",
     "FACEBOOKURL": "https://www.facebook.com/ozarksfoodharvest",
     "TWITTER": "@ozksfoodharvest",
-    "SERVICES": "The Feeding America food bank for southwest Missouri, serving 200 organizations across 28 Ozarks counties. Distributes more than 13 million meals annually to 260,000 unduplicated individuals."
+    "SERVICES": "The Feeding America food bank for southwest Missouri, serving 200 organizations across 28 Ozarks counties. Distributes more than 13 million meals annually to 260,000 unduplicated individuals.",
+    "NEED": "Food",
+    "DEMOGRAPHICS":  [ "Male", "Female", "Trans", "Senior", "Minor", "Pregnant", "Children", "Vet", "Disabled", "Uninsured", "LGBT", "Homeless" ]  
   },
   {
     "ADDRESS1": "1001 E. Chestnut Expressway",
@@ -2165,7 +2189,9 @@
     "FACEBOOKNAME": "Springfield Victory Mission",
     "FACEBOOKURL": "https://www.facebook.com/SpringfieldVictoryMission",
     "TWITTER": "",
-    "SERVICES": "Meets physical and spiritual needs of homeless and poor through emergency and educational services. These includes lodging, food, clothing, school supplies, counseling, recovery and life skills and job training."
+    "SERVICES": "Meets physical and spiritual needs of homeless and poor through emergency and educational services. These includes lodging, food, clothing, school supplies, counseling, recovery and life skills and job training.",
+    "NEED": "Food",
+    "DEMOGRAPHICS": [ "Male", "Female", "Trans", "Senior", "Minor", "Pregnant", "Children", "Vet", "Disabled", "Uninsured", "LGBT", "Homeless" ] 
   },
   {
     "ADDRESS1": "824 W. Commercial St.",
