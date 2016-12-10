@@ -24,7 +24,7 @@ namespace PoveryAttack
             SetContentView(Resource.Layout.Demo);
 
             //this is the need information from the button they clicked on the previous activity
-            string need = Intent.GetStringExtra("Need") ?? "Data not available";
+            string need = Intent.GetStringExtra("need") ?? "Data not available";
 
             Button nextButton = FindViewById<Button>(Resource.Id.nextButton);
             nextButton.Click += (sender, e) =>
@@ -35,63 +35,64 @@ namespace PoveryAttack
                 CheckBox male = FindViewById<CheckBox>(Resource.Id.checkMale);
                 if(male.Checked)
                 {
-                    intent.PutExtra("Male", true);
+                    intent.PutExtra("Male", "Male");
                 }
                 CheckBox female = FindViewById<CheckBox>(Resource.Id.checkFemale);
                 if (female.Checked)
                 {
-                    intent.PutExtra("Female", true);
+                    intent.PutExtra("Female", "Female");
                 }
                 CheckBox trans = FindViewById<CheckBox>(Resource.Id.checkTrans);
                 if (trans.Checked)
                 {
-                    intent.PutExtra("Trans", true);
+                    intent.PutExtra("Trans", "Trans");
                 }
                 CheckBox senior = FindViewById<CheckBox>(Resource.Id.checkSenior);
                 if (senior.Checked)
                 {
-                    intent.PutExtra("Senior", true);
+                    intent.PutExtra("Senior", "Senior");
                 }
                 CheckBox minor = FindViewById<CheckBox>(Resource.Id.checkMinor);
                 if (minor.Checked)
                 {
-                    intent.PutExtra("Minor", true);
+                    intent.PutExtra("Minor", "Minor");
                 }
                 CheckBox pregnant = FindViewById<CheckBox>(Resource.Id.checkPregnant);
                 if (pregnant.Checked)
                 {
-                    intent.PutExtra("Pregnant", true);
+                    intent.PutExtra("Pregnant", "Pregnant");
                 }
                 CheckBox children = FindViewById<CheckBox>(Resource.Id.checkMinorChild);
                 if (children.Checked)
                 {
-                    intent.PutExtra("Children", true);
+                    intent.PutExtra("Children", "Children");
                 }
                 CheckBox vet = FindViewById<CheckBox>(Resource.Id.checkVeteran);
                 if (vet.Checked)
                 {
-                    intent.PutExtra("Vet", true);
+                    intent.PutExtra("Vet", "Vet");
                 }
                 CheckBox disabled = FindViewById<CheckBox>(Resource.Id.checkDisabled);
                 if (disabled.Checked)
                 {
-                    intent.PutExtra("Disabled", true);
+                    intent.PutExtra("Disabled", "Disabled");
                 }
                 CheckBox uninsured = FindViewById<CheckBox>(Resource.Id.checkUninsured);
                 if (uninsured.Checked)
                 {
-                    intent.PutExtra("Uninsured", true);
+                    intent.PutExtra("Uninsured", "Uninsured");
                 }
                 CheckBox lgbt = FindViewById<CheckBox>(Resource.Id.checkLGBT);
                 if (lgbt.Checked)
                 {
-                    intent.PutExtra("LGBT", true);
+                    intent.PutExtra("LGBT", "LGBT");
                 }
                 CheckBox homeless = FindViewById<CheckBox>(Resource.Id.checkHomeless);
                 if (homeless.Checked)
                 {
-                    intent.PutExtra("Homeless", true);
+                    intent.PutExtra("Homeless", "Homeless");
                 }
+                intent.PutExtra("need", need);
                 StartActivity(intent);
             };
         }

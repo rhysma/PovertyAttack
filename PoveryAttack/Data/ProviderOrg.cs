@@ -38,6 +38,8 @@ namespace PoveryAttack.Data
         public string FACEBOOKURL;
         public string TWITTER;
         public string SERVICES;
+        public string NEED;
+        public string DEMOGRAPHICS;
 
         public override string ToString()
         {

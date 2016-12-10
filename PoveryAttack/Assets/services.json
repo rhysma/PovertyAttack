@@ -18,7 +18,9 @@
     "FACEBOOKNAME": "Alternative Opportunities Treatment Services_",
     "FACEBOOKURL": "_ _https://www.facebook.com/AOTreatmentServices",
     "TWITTER": "",
-    "SERVICES": "Residential substance abuse treatment center for women participating in the Comprehensive Substance Treatment and Rehabilitation program (CSTAR) for women and their children."
+    "SERVICES": "Residential substance abuse treatment center for women participating in the Comprehensive Substance Treatment and Rehabilitation program (CSTAR) for women and their children.",
+    "NEED": "Health",
+    "DEMOGRAPHICS": "Female"
   },
   {
     "ADDRESS1": "1370 E. Primrose St., Suite A",
@@ -39,7 +41,9 @@
     "FACEBOOKNAME": "",
     "FACEBOOKURL": "",
     "TWITTER": "",
-    "SERVICES": "Administers Greene County tax programs for persons with developmental disabilities."
+    "SERVICES": "Administers Greene County tax programs for persons with developmental disabilities.",
+    "NEED": "Health",
+    "DEMOGRAPHICS": "Male"
   },
   {
     "ADDRESS1": "1310 E. Kingsley, Suite C",

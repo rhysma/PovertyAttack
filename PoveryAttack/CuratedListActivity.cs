@@ -21,6 +21,7 @@ namespace PoveryAttack
         //path string for the database file
         string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "providers.db3");
         List<Data.ProviderOrg> items;
+        List<Data.ProviderOrg> curatedList;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -29,19 +30,21 @@ namespace PoveryAttack
             SetContentView(Resource.Layout.CuratedList);
 
             //get all of the variables that were passed over from the previous activity
-            bool male = Intent.GetBooleanExtra("Male", false);
-            bool Female = Intent.GetBooleanExtra("Female", false);
-            bool Trans = Intent.GetBooleanExtra("Trans", false);
-            bool Senior = Intent.GetBooleanExtra("Senior", false);
-            bool Minor = Intent.GetBooleanExtra("Minor", false);
-            bool Pregnant = Intent.GetBooleanExtra("Pregnant", false);
-            bool Children = Intent.GetBooleanExtra("Children", false);
-            bool Vet = Intent.GetBooleanExtra("Vet", false);
-            bool Disabled = Intent.GetBooleanExtra("Disabled", false);
-            bool Uninsured = Intent.GetBooleanExtra("Uninsured", false);
-            bool LGBT = Intent.GetBooleanExtra("LGBT", false);
-            bool Homeless = Intent.GetBooleanExtra("Homeless", false);
-
+            string[] demoChecks = new string[12];
+            demoChecks[0] = Intent.GetStringExtra("Male");
+            demoChecks[1] = Intent.GetStringExtra("Female");
+            demoChecks[2] = Intent.GetStringExtra("Trans");
+            demoChecks[3] = Intent.GetStringExtra("Senior");
+            demoChecks[4] = Intent.GetStringExtra("Minor");
+            demoChecks[5] = Intent.GetStringExtra("Pregnant");
+            demoChecks[6] = Intent.GetStringExtra("Children");
+            demoChecks[7] = Intent.GetStringExtra("Vet");
+            demoChecks[8] = Intent.GetStringExtra("Disabled");
+            demoChecks[9] = Intent.GetStringExtra("Uninsured");
+            demoChecks[10] = Intent.GetStringExtra("LGBT");
+            demoChecks[11] = Intent.GetStringExtra("Homeless");
+            //this is the need information from the button they clicked on the previous activity
+            string need = Intent.GetStringExtra("need") ?? "Data not available";
 
             //setup the db connection
             var db = new SQLiteConnection(dbPath);
@@ -64,11 +67,32 @@ namespace PoveryAttack
                 db.Insert(item);
             }
 
+            foreach (var demoItem in demoChecks)
+            {
+                
+            }
+
+            //filter the list based on the need and demographic information
+            IEnumerable<Data.ProviderOrg> curatedNeed = from item in items
+                          where item.NEED == need
+                          select item;
+
+            //IEnumerable<Data.ProviderOrg> curatedDemo = from item in curatedNeed
+            //                                            where demoChecks.Contains(item.DEMOGRAPHICS)
+            //                                            select item;
+
+            curatedList = new List<Data.ProviderOrg>();
+            foreach (var provider in curatedNeed)
+            {
+                curatedList.Add(provider);
+            }
+
+
             //get our listview 
             var lv = FindViewById<ListView>(Resource.Id.providerListView);
 
             //assign the adapter
-            lv.Adapter = new HomeScreenAdapter(this, items);
+            lv.Adapter = new HomeScreenAdapter(this, curatedList);
 
         }
 
