@@ -109,7 +109,7 @@
             p1:id="@+id/servicesBox"
             p1:layout_marginRight="300.0dp"
             p1:layout_width="336.0dp"
-            p1:layout_height="98.0dp"
-            p1:layout_marginBottom="59.5dp" />
+            p1:layout_height="175.5dp"
+            p1:layout_marginBottom="125.0dp" />
     </TableRow>
 </TableLayout>
