@@ -75,6 +75,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Address.cs" />
+    <Compile Include="Data\CommunityResources.cs" />
+    <Compile Include="Data\ConnectedOrganization.cs" />
+    <Compile Include="Data\MedicalServices.cs" />
+    <Compile Include="Data\NonMedicalServices.cs" />
+    <Compile Include="Data\Organization.cs" />
+    <Compile Include="Data\Project.cs" />
+    <Compile Include="Data\ServiceExemptions.cs" />
+    <Compile Include="Data\ServicePrerequisites.cs" />
+    <Compile Include="Data\ServiceTimeLocation.cs" />
+    <Compile Include="Data\TargetAudience.cs" />
     <Compile Include="DemographicsActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
