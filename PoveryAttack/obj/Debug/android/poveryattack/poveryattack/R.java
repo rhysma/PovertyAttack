@@ -53,12 +53,14 @@ public final class R {
         public static final int textView10=0x7f050003;
         public static final int textView3=0x7f05001e;
         public static final int transpoButton=0x7f050022;
+        public static final int viewAllButton=0x7f050023;
     }
     public static final class layout {
         public static final int alllist=0x7f030000;
         public static final int curatedlist=0x7f030001;
         public static final int demo=0x7f030002;
         public static final int main=0x7f030003;
+        public static final int providerdetail=0x7f030004;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;

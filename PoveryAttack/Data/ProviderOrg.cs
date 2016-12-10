@@ -41,7 +41,7 @@ namespace PoveryAttack.Data
 
         public override string ToString()
         {
-            return RESOURCENAME + " " + PHONE;
+            return RESOURCENAME + " " + SERVICES;
         }
 
 

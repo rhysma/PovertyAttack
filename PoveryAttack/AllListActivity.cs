@@ -23,6 +23,7 @@ namespace PoveryAttack
         List<Data.ProviderOrg> items;
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            RequestWindowFeature(WindowFeatures.NoTitle);
             base.OnCreate(savedInstanceState);
 
             // Create your application here

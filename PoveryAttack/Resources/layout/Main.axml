@@ -6,7 +6,8 @@
     p1:layout_height="match_parent"
     p1:id="@+id/tableLayout1">
     <TableRow
-        p1:id="@+id/tableRow3">
+        p1:id="@+id/tableRow3"
+        p1:layout_marginTop="20px">
         <TextView
             p1:text="Quick Serve Springfield"
             p1:textAppearance="?android:attr/textAppearanceLarge"
@@ -52,5 +53,12 @@
             p1:layout_weight="1"
             p1:id="@+id/transpoButton"
             p1:layout_margin="10px" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow3">
+        <Button
+            p1:text="View All Providers"
+            p1:layout_column="0"
+            p1:id="@+id/viewAllButton" />
     </TableRow>
 </TableLayout>

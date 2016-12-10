@@ -29,6 +29,19 @@ namespace PoveryAttack
             SetContentView(Resource.Layout.CuratedList);
 
             //get all of the variables that were passed over from the previous activity
+            bool male = Intent.GetBooleanExtra("Male", false);
+            bool Female = Intent.GetBooleanExtra("Female", false);
+            bool Trans = Intent.GetBooleanExtra("Trans", false);
+            bool Senior = Intent.GetBooleanExtra("Senior", false);
+            bool Minor = Intent.GetBooleanExtra("Minor", false);
+            bool Pregnant = Intent.GetBooleanExtra("Pregnant", false);
+            bool Children = Intent.GetBooleanExtra("Children", false);
+            bool Vet = Intent.GetBooleanExtra("Vet", false);
+            bool Disabled = Intent.GetBooleanExtra("Disabled", false);
+            bool Uninsured = Intent.GetBooleanExtra("Uninsured", false);
+            bool LGBT = Intent.GetBooleanExtra("LGBT", false);
+            bool Homeless = Intent.GetBooleanExtra("Homeless", false);
+
 
             //setup the db connection
             var db = new SQLiteConnection(dbPath);

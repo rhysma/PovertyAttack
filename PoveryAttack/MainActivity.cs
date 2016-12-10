@@ -17,7 +17,7 @@ namespace PoveryAttack
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            SetContentView (Resource.Layout.Main);
+            SetContentView(Resource.Layout.Main);
             ImageButton foodButton = FindViewById<ImageButton>(Resource.Id.foodButton);
             foodButton.Click += (sender, e) =>
             {
@@ -47,6 +47,13 @@ namespace PoveryAttack
             {
                 var intent = new Intent(this, typeof(DemographicsActivity));
                 intent.PutExtra("need", "Transpo");
+                StartActivity(intent);
+            };
+
+            Button viewAllButton = FindViewById<Button>(Resource.Id.viewAllButton);
+            viewAllButton.Click += (sender, e) =>
+            {
+                var intent = new Intent(this, typeof(AllListActivity));
                 StartActivity(intent);
             };
         }
