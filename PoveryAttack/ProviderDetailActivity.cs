@@ -51,8 +51,6 @@ namespace PoveryAttack
                 providerName.Text = r.RESOURCENAME;
                 TextView address1 = FindViewById<TextView>(Resource.Id.address1Box);
                 address1.Text = r.ADDRESS1;
-                TextView address2 = FindViewById<TextView>(Resource.Id.address2Box);
-                address2.Text = r.ADDRESS2;
                 string cityStateZip = r.CITY + ", " + r.STATE + " " + r.ZIP;
                 TextView city = FindViewById<TextView>(Resource.Id.cityBox);
                 city.Text = cityStateZip;
@@ -101,11 +99,50 @@ namespace PoveryAttack
                     StartActivity(email);
                 };
 
+                ImageButton phoneButton = FindViewById<ImageButton>(Resource.Id.phoneButton);
+                if (r.PHONE == "")
+                {
+                    phoneButton.Enabled = false;
+                }
+                phoneButton.Click += delegate
+                {
+                    var uri = Android.Net.Uri.Parse("tel:" + r.PHONE);
+                    var intent = new Intent(Intent.ActionDial, uri);
+                    StartActivity(intent);
+                };
+
+                ImageButton mapsButton = FindViewById<ImageButton>(Resource.Id.mapsButton);
+                if (r.ADDRESS1 == "")
+                {
+                    mapsButton.Enabled = false;
+                }
+                mapsButton.Click += delegate
+                {
+                    var providerAddress = $"{r.ADDRESS1} {r.ADDRESS2}, {r.CITY}, {r.STATE}, {r.ZIP}";
+                    this.launchMap(providerAddress);
+                };
+
             }
 
             
-
-
         }
+/// <summary>
+            /// Open a GoogleMaps instance
+            /// </summary>
+            /// <param name="providerAddress"></param>
+        public void launchMap(string providerAddress)
+        {
+            //Encode the address
+            string encodedAddress = "geo:0,0?q=" + Android.Net.Uri.Encode(providerAddress);
+            //Set the variable for the map intent
+            var geoUri = Android.Net.Uri.Parse(encodedAddress);
+            //Declare the map intent
+            var mapIntent = new Intent(Intent.ActionView, geoUri);
+            //Start the activity and open the maps application
+            StartActivity(mapIntent);
+
+
+
+    }
     }
 }
