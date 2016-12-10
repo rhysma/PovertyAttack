@@ -96,8 +96,7 @@
             p1:layout_margin="10px" />
     </TableRow>
     <TableRow
-        p1:id="@+id/tableRow12"
-        p1:layout_marginLeft="10dp">
+        p1:id="@+id/tableRow12">
         <ImageButton
             p1:src="@drawable/phone"
             p1:layout_width="0dp"

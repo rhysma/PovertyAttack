@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using System.IO;
+using System.Net;
 using SQLite;
 using Newtonsoft.Json;
 
@@ -19,7 +20,9 @@ namespace PoveryAttack
     public class CuratedListActivity : Activity, ListView.IOnItemClickListener
     {
         //path string for the database file
-        string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "providers.db3");
+        string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal),
+            "providers.db3");
+
         List<ProviderOrg> items;
         List<ProviderOrg> curatedList;
         IEnumerable<ProviderOrg> curatedDemo;
@@ -48,13 +51,39 @@ namespace PoveryAttack
             //this is the need information from the button they clicked on the previous activity
             string need = Intent.GetStringExtra("need") ?? "Data not available";
 
-           //load the json data to populate a list of objects
-            Android.Content.Res.AssetManager assets = this.Assets;
-            using (StreamReader sr = new StreamReader(assets.Open("services.json")))
+            try
             {
-                string json = sr.ReadToEnd();
-                items = JsonConvert.DeserializeObject<List<ProviderOrg>>(json);
+                WebClient webClient = new WebClient();
+
+                // Yes, I know this is SUPER BAD but #hackathon
+                webClient.Credentials = new NetworkCredential("otc_poverty", "zCUk7h8f");
+
+                // Get JSON from DB/Server
+                var newFileData = webClient.DownloadString("ftp://ftp.povertyattack.otccompsci.com/povertyattack.otccompsci.com//services.json");
+                ////string jsonString = System.Text.Encoding.UTF8.GetString(newFileData);
+                ////jsonString = jsonString.Replace("\r", "");
+                ////jsonString = jsonString.Replace("\n", "");
+                ////jsonString = jsonString.Replace("\\", "");
+                items = JsonConvert.DeserializeObject<List<ProviderOrg>>(newFileData);
+
+                if (string.IsNullOrEmpty(newFileData))
+                {
+                    // Yep, I'm manually throwing an excption. DWI
+                    throw new Exception();
+                }
             }
+            catch (Exception ex)
+            {
+                //load the json data to populate a list of objects
+                Android.Content.Res.AssetManager assets = this.Assets;
+                using (StreamReader sr = new StreamReader(assets.Open("services.json")))
+                {
+                    string json = sr.ReadToEnd();
+                    items = JsonConvert.DeserializeObject<List<ProviderOrg>>(json);
+                }
+            }
+
+           
 
             
             //filter the list based on the need and demographic information
@@ -65,7 +94,7 @@ namespace PoveryAttack
             //TO DO:if they don't check any of the boxes on the previous screen we need to not do this step
             //curatedDemo = curatedNeed.Where(u => demoChecks.Contains(u.DEMOGRAPHICS));
             var checkList = demoChecks.Where(check => check != null).ToList();
-            var curatedDemo = (from org in curatedNeed from demo in org.DEMOGRAPHICS from check in checkList where demo == check select org).ToList();
+            var curatedDemo = (from org in curatedNeed from demo in org.DEMOGRAPHICS from check in checkList where demo == check select org).ToList().Distinct();
 
             curatedList = new List<ProviderOrg>();
             foreach (var provider in curatedDemo)
