@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/tableLayout1">
+    <TableRow
+        p1:id="@+id/tableRow1">
+        <TextView
+            p1:text="Check All That Apply"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_column="0"
+            p1:id="@+id/textView10" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow2">
+        <CheckBox
+            p1:text="Male"
+            p1:layout_column="0"
+            p1:id="@+id/checkMale" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow3">
+      <CheckBox
+            p1:text="Female"
+            p1:layout_column="0"
+            p1:id="@+id/checkFemale" />
+    </TableRow>
+  <TableRow
+        p1:id="@+id/tableRow4">
+    <CheckBox
+          p1:text="Transgender"
+          p1:layout_column="0"
+          p1:id="@+id/checkTrans" />
+  </TableRow>
+  <TableRow
+        p1:id="@+id/tableRow5">
+    <CheckBox
+          p1:text="Senior (over age 65)"
+          p1:layout_column="0"
+          p1:id="@+id/checkSenior" />
+  </TableRow>
+  <TableRow
+        p1:id="@+id/tableRow6">
+    <CheckBox
+          p1:text="Minor (Under age of 18)"
+          p1:layout_column="0"
+          p1:id="@+id/checkMinor" />
+  </TableRow>
+  <TableRow
+        p1:id="@+id/tableRow7">
+    <CheckBox
+          p1:text="Pregnant"
+          p1:layout_column="0"
+          p1:id="@+id/checkPregnant" />
+  </TableRow>
+  <TableRow
+        p1:id="@+id/tableRow8">
+    <CheckBox
+          p1:text="Have one or more minor children"
+          p1:layout_column="0"
+          p1:id="@+id/checkMinorChild" />
+  </TableRow>
+  <TableRow
+        p1:id="@+id/tableRow9">
+    <CheckBox
+          p1:text="Veteran"
+          p1:layout_column="0"
+          p1:id="@+id/checkVeteran" />
+  </TableRow>
+  <TableRow
+        p1:id="@+id/tableRow10">
+    <CheckBox
+          p1:text="Disabled"
+          p1:layout_column="0"
+          p1:id="@+id/checkDisabled" />
+  </TableRow>
+  <TableRow
+        p1:id="@+id/tableRow11">
+    <CheckBox
+          p1:text="Uninsured"
+          p1:layout_column="0"
+          p1:id="@+id/checkUninsured" />
+  </TableRow>
+  <TableRow
+        p1:id="@+id/tableRow12">
+    <CheckBox
+          p1:text="LGBT+"
+          p1:layout_column="0"
+          p1:id="@+id/checkLGBT" />
+  </TableRow>
+  <TableRow
+        p1:id="@+id/tableRow13">
+    <CheckBox
+          p1:text="Homeless"
+          p1:layout_column="0"
+          p1:id="@+id/checkHomeless" />
+  </TableRow>
+</TableLayout>

@@ -1,3 +1,7 @@
+PoveryAttack.DemographicsActivity, PoveryAttack;md52dcd2fd0c71f5fa9c2642dad3b842073.DemographicsActivity
+PoveryAttack.DemographicsActivity, PoveryAttack, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52dcd2fd0c71f5fa9c2642dad3b842073.DemographicsActivity
+PoveryAttack.DemographicsActivity;md52dcd2fd0c71f5fa9c2642dad3b842073.DemographicsActivity
+poveryattack.DemographicsActivity;md52dcd2fd0c71f5fa9c2642dad3b842073.DemographicsActivity
 PoveryAttack.MainActivity, PoveryAttack;md52dcd2fd0c71f5fa9c2642dad3b842073.MainActivity
 PoveryAttack.MainActivity, PoveryAttack, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52dcd2fd0c71f5fa9c2642dad3b842073.MainActivity
 PoveryAttack.MainActivity;md52dcd2fd0c71f5fa9c2642dad3b842073.MainActivity

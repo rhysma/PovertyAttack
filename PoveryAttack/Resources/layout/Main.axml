@@ -12,7 +12,8 @@
             p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_column="0"
             p1:id="@+id/textView3"
-            p1:layout_width="379.0dp" />
+            p1:layout_width="379.0dp"
+            p1:layout_gravity="center" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow1">

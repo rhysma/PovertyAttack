@@ -5,6 +5,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="PoveryAttack" android:name="android.app.Application" android:allowBackup="true" android:icon="@android:style/Theme.Light" android:debuggable="true">
+    <activity android:icon="@android:style/Theme.Light" android:label="DemographicsActivity" android:name="md52dcd2fd0c71f5fa9c2642dad3b842073.DemographicsActivity" />
     <activity android:icon="@android:style/Theme.Light" android:label="PovertyAttack" android:name="md52dcd2fd0c71f5fa9c2642dad3b842073.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
