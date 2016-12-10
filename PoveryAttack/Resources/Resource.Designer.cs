@@ -347,13 +347,19 @@ namespace PoveryAttack
 			public const int Icon = 2130837550;
 			
 			// aapt resource value: 0x7f02002f
-			public const int Shelter = 2130837551;
+			public const int map = 2130837551;
 			
 			// aapt resource value: 0x7f020030
-			public const int Transportation = 2130837552;
+			public const int phone = 2130837552;
 			
 			// aapt resource value: 0x7f020031
-			public const int website = 2130837553;
+			public const int Shelter = 2130837553;
+			
+			// aapt resource value: 0x7f020032
+			public const int Transportation = 2130837554;
+			
+			// aapt resource value: 0x7f020033
+			public const int website = 2130837555;
 			
 			static Drawable()
 			{
