@@ -13,7 +13,8 @@
             p1:layout_column="0"
             p1:id="@+id/providerNameBox"
             p1:layout_marginRight="275.0dp"
-            p1:layout_width="373.0dp" />
+            p1:layout_width="373.0dp"
+            p1:layout_height="51.5dp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow2">
@@ -96,14 +97,19 @@
             p1:text="Services Provided"
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_column="0"
-            p1:id="@+id/textView31" />
+            p1:id="@+id/textView31"
+            p1:layout_width="343.5dp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow10">
         <TextView
-            p1:text="Services provided go here"
+            p1:text="Services"
             p1:textAppearance="?android:attr/textAppearanceSmall"
             p1:layout_column="0"
-            p1:id="@+id/servicesBox" />
+            p1:id="@+id/servicesBox"
+            p1:layout_marginRight="300.0dp"
+            p1:layout_width="336.0dp"
+            p1:layout_height="98.0dp"
+            p1:layout_marginBottom="59.5dp" />
     </TableRow>
 </TableLayout>
