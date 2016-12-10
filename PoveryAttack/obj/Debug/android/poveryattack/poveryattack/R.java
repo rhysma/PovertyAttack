@@ -18,12 +18,15 @@ public final class R {
         public static final int transportation=0x7f020004;
     }
     public static final class id {
-        public static final int button2=0x7f050002;
-        public static final int foodButton=0x7f050001;
-        public static final int medicalButton=0x7f050004;
-        public static final int tableRow1=0x7f050000;
-        public static final int tableRow2=0x7f050003;
-        public static final int transportButton=0x7f050005;
+        public static final int foodButton=0x7f050004;
+        public static final int healthButton=0x7f050007;
+        public static final int shelterButton=0x7f050005;
+        public static final int tableLayout1=0x7f050000;
+        public static final int tableRow1=0x7f050003;
+        public static final int tableRow2=0x7f050006;
+        public static final int tableRow3=0x7f050001;
+        public static final int textView3=0x7f050002;
+        public static final int transpoButton=0x7f050008;
     }
     public static final class layout {
         public static final int main=0x7f030000;

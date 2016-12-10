@@ -107,10 +107,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Given Resources\User Stories.txt" />
-    <AndroidResource Include="Resources\drawable\Health.PNG" />
     <AndroidResource Include="Resources\drawable\Shelter.PNG" />
-    <AndroidResource Include="Resources\drawable\Transportation.PNG" />
     <AndroidResource Include="Resources\drawable\Food.PNG" />
+    <AndroidResource Include="Resources\drawable\Health.PNG" />
+    <AndroidResource Include="Resources\drawable\Transportation.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
