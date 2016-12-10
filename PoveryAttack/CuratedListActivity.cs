@@ -77,7 +77,9 @@ namespace PoveryAttack
                           select item;
 
             //TO DO:if they don't check any of the boxes on the previous screen we need to not do this step
-            curatedDemo = curatedNeed.Where(u => demoChecks.Contains(u.DEMOGRAPHICS));
+            //curatedDemo = curatedNeed.Where(u => demoChecks.Contains(u.DEMOGRAPHICS));
+            var checkList = demoChecks.Where(check => check != null).ToList();
+            var curatedDemo = (from org in curatedNeed from demo in org.DEMOGRAPHICS from check in checkList where demo == check select org).ToList();
 
             curatedList = new List<ProviderOrg>();
             foreach (var provider in curatedDemo)
@@ -121,14 +123,9 @@ namespace PoveryAttack
             var menuItemName = menuItem[index];
             ProviderOrg contactName = curatedList[info.Position];
             id = info.Position;
-
-            var db = new SQLiteConnection(dbPath);
-            var table = db.Table<ProviderOrg>();
-            var record = table.Where(v => v.RESOURCEID == contactName.RESOURCEID).FirstOrDefault();
-
-
             int resourceID = contactName.RESOURCEID;
             var intent = new Intent(this, typeof(ProviderDetailActivity));
+
             intent.PutExtra("id", resourceID);
             StartActivity(intent);
 

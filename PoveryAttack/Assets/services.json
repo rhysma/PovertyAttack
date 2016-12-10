@@ -1723,7 +1723,7 @@
     "FACEBOOKNAME": "Ozarks Transportation Organization",
     "FACEBOOKURL": "https://www.facebook.com/pages/Ozarks-Transportation-Organization/259683794058148",
     "TWITTER": "@giveusyourinput",
-    "SERVICES": "Offers information on wise commuting choices that reduce traffic congestion, pollution, commuting stress and saves money; provides carpool matches on a map using custom schedules and driving routes."
+    "SERVICES": "Offers information on wise commuting choices that reduce traffic congestion, pollution, commuting stress and saves money; provides carpool matches on a map using custom schedules and driving routes.",
     "NEED": "Transportation",
     "DEMOGRAPHICS":  [ "Male", "Female", "Trans", "Senior", "Minor", "Pregnant", "Children", "Vet", "Disabled", "Uninsured", "LGBT", "Homeless" ] 
   },
