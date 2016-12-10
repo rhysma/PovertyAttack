@@ -135,7 +135,8 @@ namespace PoveryAttack
             {
                 var org = curatedList[info.Position];
                 id = info.Position;
-                var providerAddress = $"{org.ADDRESS1}";
+                var providerAddress = $"{org.ADDRESS1} {org.ADDRESS2}, {org.CITY}, {org.STATE}, {org.ZIP}";
+                this.launchMap(providerAddress);
             }
            
 
