@@ -16,7 +16,7 @@ using Newtonsoft.Json;
 namespace PoveryAttack
 {
     [Activity(Label = "AllListActivity")]
-    public class AllListActivity : Activity
+    public class AllListActivity : Activity, ListView.IOnItemClickListener
     {
         int id;
 
@@ -40,6 +40,7 @@ namespace PoveryAttack
 
             //get our listview 
             var lv = FindViewById<ListView>(Resource.Id.providerListView);
+            lv.OnItemClickListener = this;
 
             //assign the adapter
             lv.Adapter = new HomeScreenAdapter(this, items);
@@ -50,7 +51,19 @@ namespace PoveryAttack
 
         }
 
-        
+        public void OnItemClick(AdapterView parent, View view, int position, long id)
+        {
+            ProviderOrg contactName = items[position];
+            id = position;
+            int resourceID = contactName.RESOURCEID;
+            var intent = new Intent(this, typeof(ProviderDetailActivity));
+
+            intent.PutExtra("id", resourceID);
+            StartActivity(intent);
+        }
+
+
+
         public override bool OnContextItemSelected(IMenuItem item)
         {
             var info = (AdapterView.AdapterContextMenuInfo)item.MenuInfo;

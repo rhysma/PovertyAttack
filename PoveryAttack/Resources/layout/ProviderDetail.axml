@@ -15,7 +15,8 @@
             p1:layout_marginRight="275.0dp"
             p1:layout_width="373.0dp"
             p1:layout_height="51.5dp"
-            p1:layout_marginLeft="5dp" />
+            p1:layout_marginLeft="5dp"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow2">
@@ -24,7 +25,8 @@
             p1:textAppearance="?android:attr/textAppearanceMedium"
             p1:layout_column="0"
             p1:id="@+id/textView31"
-            p1:layout_marginLeft="5dp" />
+            p1:layout_marginLeft="5dp"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow3">
@@ -33,7 +35,8 @@
             p1:textAppearance="?android:attr/textAppearanceSmall"
             p1:layout_column="0"
             p1:id="@+id/address1Box"
-            p1:layout_marginLeft="5dp" />
+            p1:layout_marginLeft="5dp"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow5">
@@ -42,7 +45,8 @@
             p1:textAppearance="?android:attr/textAppearanceSmall"
             p1:layout_column="0"
             p1:id="@+id/cityBox"
-            p1:layout_marginLeft="5dp" />
+            p1:layout_marginLeft="5dp"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow6">
@@ -51,7 +55,8 @@
             p1:textAppearance="?android:attr/textAppearanceSmall"
             p1:layout_column="0"
             p1:id="@+id/countyBox"
-            p1:layout_marginLeft="5dp" />
+            p1:layout_marginLeft="5dp"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow7">
@@ -60,7 +65,8 @@
             p1:textAppearance="?android:attr/textAppearanceSmall"
             p1:layout_column="0"
             p1:id="@+id/phoneBox"
-            p1:layout_marginLeft="5dp" />
+            p1:layout_marginLeft="5dp"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow8">
@@ -116,7 +122,8 @@
             p1:layout_column="0"
             p1:id="@+id/textView31"
             p1:layout_width="343.5dp"
-            p1:layout_marginLeft="5dp" />
+            p1:layout_marginLeft="5dp"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow10">
@@ -129,6 +136,7 @@
             p1:layout_width="336.0dp"
             p1:layout_height="175.5dp"
             p1:layout_marginBottom="125.0dp"
-            p1:layout_marginLeft="20dp" />
+            p1:layout_marginLeft="20dp"
+            p1:textSize="30sp" />
     </TableRow>
 </TableLayout>

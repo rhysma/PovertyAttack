@@ -54,7 +54,7 @@ namespace PoveryAttack
             }
 
             view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = myProviders[position].RESOURCENAME;
-            view.FindViewById<TextView>(Android.Resource.Id.Text2).Text = myProviders[position].SERVICES;
+            //view.FindViewById<TextView>(Android.Resource.Id.Text2).Text = myProviders[position].SERVICES;
             return view;
         }
     }

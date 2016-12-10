@@ -79,7 +79,7 @@ namespace PoveryAttack
                 }
                 websiteButton.Click += delegate
                 {
-                    var uri = Android.Net.Uri.Parse(r.WEBPAGE);
+                    var uri = Android.Net.Uri.Parse("http://"+r.WEBPAGE);
                     var intent = new Intent(Intent.ActionView, uri);
                     StartActivity(intent);
                 };
