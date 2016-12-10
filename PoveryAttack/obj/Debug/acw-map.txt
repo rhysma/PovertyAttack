@@ -1,3 +1,7 @@
+PoveryAttack.AllListActivity, PoveryAttack;md52dcd2fd0c71f5fa9c2642dad3b842073.AllListActivity
+PoveryAttack.AllListActivity, PoveryAttack, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52dcd2fd0c71f5fa9c2642dad3b842073.AllListActivity
+PoveryAttack.AllListActivity;md52dcd2fd0c71f5fa9c2642dad3b842073.AllListActivity
+poveryattack.AllListActivity;md52dcd2fd0c71f5fa9c2642dad3b842073.AllListActivity
 PoveryAttack.CuratedListActivity, PoveryAttack;md52dcd2fd0c71f5fa9c2642dad3b842073.CuratedListActivity
 PoveryAttack.CuratedListActivity, PoveryAttack, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52dcd2fd0c71f5fa9c2642dad3b842073.CuratedListActivity
 PoveryAttack.CuratedListActivity;md52dcd2fd0c71f5fa9c2642dad3b842073.CuratedListActivity

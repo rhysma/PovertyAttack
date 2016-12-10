@@ -114,11 +114,11 @@ namespace PoveryAttack
 			// aapt resource value: 0x7f050021
 			public const int healthButton = 2131034145;
 			
-			// aapt resource value: 0x7f050000
-			public const int listView1 = 2131034112;
-			
 			// aapt resource value: 0x7f05001d
 			public const int nextButton = 2131034141;
+			
+			// aapt resource value: 0x7f050000
+			public const int providerListView = 2131034112;
 			
 			// aapt resource value: 0x7f050020
 			public const int shelterButton = 2131034144;
@@ -191,13 +191,16 @@ namespace PoveryAttack
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int CuratedList = 2130903040;
+			public const int AllList = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Demo = 2130903041;
+			public const int CuratedList = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Main = 2130903042;
+			public const int Demo = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Main = 2130903043;
 			
 			static Layout()
 			{

@@ -32,8 +32,8 @@ public final class R {
         public static final int checkVeteran=0x7f050013;
         public static final int foodButton=0x7f05001f;
         public static final int healthButton=0x7f050021;
-        public static final int listView1=0x7f050000;
         public static final int nextButton=0x7f05001d;
+        public static final int providerListView=0x7f050000;
         public static final int shelterButton=0x7f050020;
         public static final int tableLayout1=0x7f050001;
         public static final int tableRow1=0x7f050002;
@@ -55,9 +55,10 @@ public final class R {
         public static final int transpoButton=0x7f050022;
     }
     public static final class layout {
-        public static final int curatedlist=0x7f030000;
-        public static final int demo=0x7f030001;
-        public static final int main=0x7f030002;
+        public static final int alllist=0x7f030000;
+        public static final int curatedlist=0x7f030001;
+        public static final int demo=0x7f030002;
+        public static final int main=0x7f030003;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;

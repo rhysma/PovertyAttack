@@ -50,7 +50,13 @@ namespace PoveryAttack
             {
                 db.Insert(item);
             }
-           
+
+            //get our listview 
+            var lv = FindViewById<ListView>(Resource.Id.providerListView);
+
+            //assign the adapter
+            lv.Adapter = new HomeScreenAdapter(this, items);
+
         }
 
         //a method that deletes all of the records in the table

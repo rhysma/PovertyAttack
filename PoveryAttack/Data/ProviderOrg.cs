@@ -39,7 +39,10 @@ namespace PoveryAttack.Data
         public string TWITTER;
         public string SERVICES;
 
-
+        public override string ToString()
+        {
+            return RESOURCENAME + " " + PHONE;
+        }
 
 
     }
