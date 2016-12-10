@@ -50,10 +50,11 @@ namespace PoveryAttack
             View view = convertView;
             if(view == null)
             {
-                view = context.LayoutInflater.Inflate(Android.Resource.Layout.SimpleListItem1, null);
+                view = context.LayoutInflater.Inflate(Android.Resource.Layout.SimpleListItem2, null);
             }
 
-            view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = myProviders[position].ToString();
+            view.FindViewById<TextView>(Android.Resource.Id.Text1).Text = myProviders[position].RESOURCENAME;
+            view.FindViewById<TextView>(Android.Resource.Id.Text2).Text = myProviders[position].SERVICES;
             return view;
         }
     }

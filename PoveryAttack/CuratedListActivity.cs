@@ -16,7 +16,7 @@ using Newtonsoft.Json;
 namespace PoveryAttack
 {
     [Activity(Label = "CuratedListActivity")]
-    public class CuratedListActivity : Activity
+    public class CuratedListActivity : Activity, ListView.IOnItemClickListener
     {
         //path string for the database file
         string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "providers.db3");
@@ -76,15 +76,26 @@ namespace PoveryAttack
 
             //get our listview 
             var lv = FindViewById<ListView>(Resource.Id.providerListView);
+            lv.OnItemClickListener = this;
 
             //assign the adapter
             lv.Adapter = new HomeScreenAdapter(this, curatedList);
 
-            
 
             //we have to register the listview for context menu
             //so that the system knows the behavior to use
             RegisterForContextMenu(lv);
+        }
+
+        public void OnItemClick(AdapterView parent, View view, int position, long id)
+        {
+            ProviderOrg contactName = curatedList[position];
+            id = position;
+            int resourceID = contactName.RESOURCEID;
+            var intent = new Intent(this, typeof(ProviderDetailActivity));
+
+            intent.PutExtra("id", resourceID);
+            StartActivity(intent);
         }
 
         public override void OnCreateContextMenu(IContextMenu menu, View v, IContextMenuContextMenuInfo menuInfo)

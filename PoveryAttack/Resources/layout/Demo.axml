@@ -9,7 +9,7 @@
         p1:id="@+id/tableRow1">
         <TextView
             p1:text="Check All That Apply"
-            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
             p1:layout_column="0"
             p1:id="@+id/textView10" />
     </TableRow>
@@ -18,94 +18,104 @@
         <CheckBox
             p1:text="Male"
             p1:layout_column="0"
-            p1:id="@+id/checkMale" />
+            p1:id="@+id/checkMale"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow3">
         <CheckBox
             p1:text="Female"
             p1:layout_column="0"
-            p1:id="@+id/checkFemale" />
+            p1:id="@+id/checkFemale"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow4">
         <CheckBox
             p1:text="Transgender"
             p1:layout_column="0"
-            p1:id="@+id/checkTrans" />
+            p1:id="@+id/checkTrans"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow5">
         <CheckBox
             p1:text="Senior (over age 65)"
             p1:layout_column="0"
-            p1:id="@+id/checkSenior" />
+            p1:id="@+id/checkSenior"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow6">
         <CheckBox
             p1:text="Minor (Under age of 18)"
             p1:layout_column="0"
-            p1:id="@+id/checkMinor" />
+            p1:id="@+id/checkMinor"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow7">
         <CheckBox
             p1:text="Pregnant"
             p1:layout_column="0"
-            p1:id="@+id/checkPregnant" />
+            p1:id="@+id/checkPregnant"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow8">
         <CheckBox
-            p1:text="Have one or more minor children"
+            p1:text="Have minor children"
             p1:layout_column="0"
-            p1:id="@+id/checkMinorChild" />
+            p1:id="@+id/checkMinorChild"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow9">
         <CheckBox
             p1:text="Veteran"
             p1:layout_column="0"
-            p1:id="@+id/checkVeteran" />
+            p1:id="@+id/checkVeteran"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow10">
         <CheckBox
             p1:text="Disabled"
             p1:layout_column="0"
-            p1:id="@+id/checkDisabled" />
+            p1:id="@+id/checkDisabled"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow11">
         <CheckBox
             p1:text="Uninsured"
             p1:layout_column="0"
-            p1:id="@+id/checkUninsured" />
+            p1:id="@+id/checkUninsured"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow12">
         <CheckBox
             p1:text="LGBT+"
             p1:layout_column="0"
-            p1:id="@+id/checkLGBT" />
+            p1:id="@+id/checkLGBT"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow13">
         <CheckBox
             p1:text="Homeless"
             p1:layout_column="0"
-            p1:id="@+id/checkHomeless" />
+            p1:id="@+id/checkHomeless"
+            p1:textSize="30sp" />
     </TableRow>
     <TableRow
-        p1:id="@+id/tableRow14"
-        p1:minWidth="25px"
-        p1:minHeight="25px"
-        p1:layout_gravity="center">
+        p1:id="@+id/tableRow14">
         <Button
             p1:text="View List"
             p1:layout_column="0"
             p1:id="@+id/nextButton"
-            p1:layout_width="131.0dp" />
+            p1:layout_width="152.5dp"
+            p1:layout_gravity="center_vertical" />
     </TableRow>
 </TableLayout>
