@@ -133,9 +133,9 @@ namespace PoveryAttack
             }
             if (menuItemName == "Map")
             {
-                //ProviderOrg contactName = curatedList[info.Position];
-                //id = info.Position;
-                //var providerAddress = $"{contac}";
+                var org = curatedList[info.Position];
+                id = info.Position;
+                var providerAddress = $"{org.ADDRESS1}";
             }
            
 
