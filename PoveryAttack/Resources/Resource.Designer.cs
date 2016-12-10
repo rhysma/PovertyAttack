@@ -45,7 +45,19 @@ namespace PoveryAttack
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int Food = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Health = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Icon = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int Shelter = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int Transportation = 2130837508;
 			
 			static Drawable()
 			{
@@ -53,6 +65,37 @@ namespace PoveryAttack
 			}
 			
 			private Drawable()
+			{
+			}
+		}
+		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f050002
+			public const int button2 = 2131034114;
+			
+			// aapt resource value: 0x7f050001
+			public const int foodButton = 2131034113;
+			
+			// aapt resource value: 0x7f050004
+			public const int medicalButton = 2131034116;
+			
+			// aapt resource value: 0x7f050000
+			public const int tableRow1 = 2131034112;
+			
+			// aapt resource value: 0x7f050003
+			public const int tableRow2 = 2131034115;
+			
+			// aapt resource value: 0x7f050005
+			public const int transportButton = 2131034117;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
 			{
 			}
 		}
