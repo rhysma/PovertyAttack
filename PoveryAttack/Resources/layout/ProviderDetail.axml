@@ -6,7 +6,8 @@
     p1:layout_height="match_parent"
     p1:id="@+id/tableLayout1">
     <TableRow
-        p1:id="@+id/tableRow1">
+        p1:id="@+id/tableRow1"
+        p1:layout_height="87.5dp">
         <TextView
             p1:text="Provider Name"
             p1:textAppearance="?android:attr/textAppearanceLarge"
@@ -14,9 +15,10 @@
             p1:id="@+id/providerNameBox"
             p1:layout_marginRight="275.0dp"
             p1:layout_width="373.0dp"
-            p1:layout_height="51.5dp"
+            p1:layout_height="82.0dp"
             p1:layout_marginLeft="5dp"
-            p1:textSize="30sp" />
+            p1:textSize="25sp"
+            p1:layout_marginBottom="22.0dp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow2">
@@ -26,7 +28,7 @@
             p1:layout_column="0"
             p1:id="@+id/textView31"
             p1:layout_marginLeft="5dp"
-            p1:textSize="30sp" />
+            p1:textSize="20sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow3">
@@ -36,7 +38,7 @@
             p1:layout_column="0"
             p1:id="@+id/address1Box"
             p1:layout_marginLeft="5dp"
-            p1:textSize="30sp" />
+            p1:textSize="20sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow5">
@@ -46,7 +48,7 @@
             p1:layout_column="0"
             p1:id="@+id/cityBox"
             p1:layout_marginLeft="5dp"
-            p1:textSize="30sp" />
+            p1:textSize="20sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow6">
@@ -56,7 +58,7 @@
             p1:layout_column="0"
             p1:id="@+id/countyBox"
             p1:layout_marginLeft="5dp"
-            p1:textSize="30sp" />
+            p1:textSize="20sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow7">
@@ -66,7 +68,7 @@
             p1:layout_column="0"
             p1:id="@+id/phoneBox"
             p1:layout_marginLeft="5dp"
-            p1:textSize="30sp" />
+            p1:textSize="20sp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow8">
@@ -138,6 +140,6 @@
             p1:layout_height="175.5dp"
             p1:layout_marginBottom="125.0dp"
             p1:layout_marginLeft="20dp"
-            p1:textSize="30sp" />
+            p1:textSize="20sp" />
     </TableRow>
 </TableLayout>
