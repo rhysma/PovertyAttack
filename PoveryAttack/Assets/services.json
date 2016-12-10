@@ -1,6 +1,4 @@
-﻿// [ "Male", "Female", "Trans", "Senior", "Minor", "Pregnant", "Children", "Vet", "Disabled", "Uninsured", "LGBT", "Homeless" ]
-
-[
+﻿[
   {
     "ADDRESS1": "2411 W. Catalpa St.",
     "RESOURCEID": 33205,
