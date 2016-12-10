@@ -13,6 +13,10 @@ C:\Users\rhysm\Source\Repos\OTCHack4Good\PoveryAttack\obj\Debug\android\assets\S
 C:\Users\rhysm\Source\Repos\OTCHack4Good\PoveryAttack\obj\Debug\android\assets\SQLitePCLRaw.core.dll
 C:\Users\rhysm\Source\Repos\OTCHack4Good\PoveryAttack\obj\Debug\android\assets\SQLitePCLRaw.lib.e_sqlite3.dll
 C:\Users\rhysm\Source\Repos\OTCHack4Good\PoveryAttack\obj\Debug\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\rhysm\Source\Repos\OTCHack4Good\PoveryAttack\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
+C:\Users\rhysm\Source\Repos\OTCHack4Good\PoveryAttack\obj\Debug\android\assets\Xamarin.GooglePlayServices.Base.dll
+C:\Users\rhysm\Source\Repos\OTCHack4Good\PoveryAttack\obj\Debug\android\assets\Xamarin.GooglePlayServices.Basement.dll
+C:\Users\rhysm\Source\Repos\OTCHack4Good\PoveryAttack\obj\Debug\android\assets\Xamarin.GooglePlayServices.Maps.dll
 C:\Users\rhysm\Source\Repos\OTCHack4Good\PoveryAttack\obj\Debug\android\assets\System.Threading.dll
 C:\Users\rhysm\Source\Repos\OTCHack4Good\PoveryAttack\obj\Debug\android\assets\System.Runtime.dll
 C:\Users\rhysm\Source\Repos\OTCHack4Good\PoveryAttack\obj\Debug\android\assets\System.ComponentModel.Composition.dll

@@ -2,4 +2,5 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">Quick Serve Springfield</string>
+  <string name="PovertyAttack">Quick Serve Springfield</string>
 </resources>
