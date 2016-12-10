@@ -1,0 +1,46 @@
+﻿As a member of the homeless community:
+	· I can now find food pantries near me from the home screen of the application.
+	· I can see exactly how far away I am from every organization.
+	· I can get directions to the nearest cooperating organization.
+	· I can view coordinated entry options from the main screen of the application.
+	· I can quickly see what available organizations are willing to serve me.
+	· I can view a list of all food pantries within Springfield.
+	· I can view a list of all homeless shelters in Springfield.
+	· I can view a list of all women shelters in Springfield.
+	· I can view a list of all men shelters in Springfield.
+	· I have information about what every organization does.
+	· I have information about who each organization serves.
+	· I have information about when each organization serves.
+	· I have information about how each organization can serve me.
+	· I can view an informative page for each organization that offers potential assistance to me.
+	· I can view a meal schedule specific to each organization.
+	· I will know what time I need to go to an organization to get assistance.
+As a member of the serving community:
+	· I can view the schedule for each specific food pantry in Springfield.
+	· I can see which time slots I can serve from in an updated schedule from each organization.
+	· I can volunteer directly on the application to help serve.
+	· I can choose from a big list of organizations which one I want to serve.
+	· I can find the location of each organization.
+	· I can get directions to any organization from my current location
+
+
+Coordinated Entry:
+As a single woman, I know where to go to begin my journey.
+	o Salvation Army Family Enrichment Center
+	o One Door
+	o Life House (Expecting to give birth in near future)
+As a single man, I know where to go for assistance.
+	o One Door
+	o Salvation Army Family Enrichment Center
+	o Harbor House
+	o Victory Mission
+As an adult with a spouse and children, I know which organization can help me.
+	o One Door
+	o Salvation Army Family Enrichment Center
+A a young adult between the ages of 18-24, I can receive assistance from the right place.
+	o Rare Breed Outreach Center
+	o One Door
+	o Great Circle
+As a veteran of war, I can go to the right place for help.
+	o Home at Last- SSVF Program
+	o The Kitchen, Inc
