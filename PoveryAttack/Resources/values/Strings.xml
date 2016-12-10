@@ -6,6 +6,7 @@
 
   <string-array name="menu">
     <item>Details</item>
+    <item>Call</item>
   </string-array>
 
 </resources>
