@@ -7,11 +7,103 @@
     p1:id="@+id/tableLayout1">
     <TableRow
         p1:id="@+id/tableRow1">
+        <TextView
+            p1:text="Provider Name"
+            p1:textAppearance="?android:attr/textAppearanceLarge"
+            p1:layout_column="0"
+            p1:id="@+id/providerNameBox"
+            p1:layout_marginRight="275.0dp"
+            p1:layout_width="373.0dp" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow2">
+        <TextView
+            p1:text="Location"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_column="0"
+            p1:id="@+id/textView31" />
     </TableRow>
     <TableRow
         p1:id="@+id/tableRow3">
+        <TextView
+            p1:text="Address1"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_column="0"
+            p1:id="@+id/address1Box" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow4">
+        <TextView
+            p1:text="Address2"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_column="0"
+            p1:id="@+id/address2Box" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow5">
+        <TextView
+            p1:text="City, State ZIP"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_column="0"
+            p1:id="@+id/cityBox" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow6">
+        <TextView
+            p1:text="County"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_column="0"
+            p1:id="@+id/countyBox" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow7">
+        <TextView
+            p1:text="Phone"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_column="0"
+            p1:id="@+id/phoneBox" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow8">
+        <ImageButton
+            p1:src="@drawable/fb"
+            p1:layout_width="0dp"
+            p1:layout_height="wrap_content"
+            p1:layout_gravity="left|center"
+            p1:layout_weight="1"
+            p1:id="@+id/fbButton"
+            p1:layout_margin="10px" />
+        <ImageButton
+            p1:src="@drawable/website"
+            p1:layout_width="0dp"
+            p1:layout_height="wrap_content"
+            p1:layout_gravity="right|center"
+            p1:layout_weight="1"
+            p1:id="@+id/websiteButton"
+            p1:layout_margin="10px" />
+        <ImageButton
+            p1:src="@drawable/email"
+            p1:layout_width="0dp"
+            p1:layout_height="wrap_content"
+            p1:layout_gravity="right|center"
+            p1:layout_weight="1"
+            p1:id="@+id/emailButton"
+            p1:layout_margin="10px" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow9">
+        <TextView
+            p1:text="Services Provided"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_column="0"
+            p1:id="@+id/textView31" />
+    </TableRow>
+    <TableRow
+        p1:id="@+id/tableRow10">
+        <TextView
+            p1:text="Services provided go here"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_column="0"
+            p1:id="@+id/servicesBox" />
     </TableRow>
 </TableLayout>

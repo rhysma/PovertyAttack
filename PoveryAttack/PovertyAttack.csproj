@@ -161,6 +161,9 @@
     <AndroidResource Include="Resources\drawable\Food.PNG" />
     <AndroidResource Include="Resources\drawable\Health.PNG" />
     <AndroidResource Include="Resources\drawable\Transportation.PNG" />
+    <AndroidResource Include="Resources\drawable\website.png" />
+    <AndroidResource Include="Resources\drawable\email.png" />
+    <AndroidResource Include="Resources\drawable\FB.png" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="googleplayservices-maps">

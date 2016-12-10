@@ -9,6 +9,9 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System.IO;
+using SQLite;
+using Newtonsoft.Json;
 
 namespace PoveryAttack
 {
@@ -17,11 +20,16 @@ namespace PoveryAttack
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "providers.db3");
+
             RequestWindowFeature(WindowFeatures.NoTitle);
             base.OnCreate(savedInstanceState);
 
             // Create your application here
             SetContentView(Resource.Layout.ProviderDetail);
+
+            //what provider do we want?
+            
         }
     }
 }

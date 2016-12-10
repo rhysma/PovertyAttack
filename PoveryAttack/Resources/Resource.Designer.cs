@@ -316,19 +316,28 @@ namespace PoveryAttack
 			public const int common_plus_signin_btn_text_light_pressed = 2130837545;
 			
 			// aapt resource value: 0x7f02002a
-			public const int Food = 2130837546;
+			public const int email = 2130837546;
 			
 			// aapt resource value: 0x7f02002b
-			public const int Health = 2130837547;
+			public const int FB = 2130837547;
 			
 			// aapt resource value: 0x7f02002c
-			public const int Icon = 2130837548;
+			public const int Food = 2130837548;
 			
 			// aapt resource value: 0x7f02002d
-			public const int Shelter = 2130837549;
+			public const int Health = 2130837549;
 			
 			// aapt resource value: 0x7f02002e
-			public const int Transportation = 2130837550;
+			public const int Icon = 2130837550;
+			
+			// aapt resource value: 0x7f02002f
+			public const int Shelter = 2130837551;
+			
+			// aapt resource value: 0x7f020030
+			public const int Transportation = 2130837552;
+			
+			// aapt resource value: 0x7f020031
+			public const int website = 2130837553;
 			
 			static Drawable()
 			{
@@ -342,6 +351,12 @@ namespace PoveryAttack
 		
 		public partial class Id
 		{
+			
+			// aapt resource value: 0x7f070033
+			public const int address1Box = 2131165235;
+			
+			// aapt resource value: 0x7f070034
+			public const int address2Box = 2131165236;
 			
 			// aapt resource value: 0x7f070005
 			public const int adjust_height = 2131165189;
@@ -388,8 +403,20 @@ namespace PoveryAttack
 			// aapt resource value: 0x7f070020
 			public const int checkVeteran = 2131165216;
 			
+			// aapt resource value: 0x7f070035
+			public const int cityBox = 2131165237;
+			
+			// aapt resource value: 0x7f070036
+			public const int countyBox = 2131165238;
+			
 			// aapt resource value: 0x7f07000b
 			public const int dark = 2131165195;
+			
+			// aapt resource value: 0x7f07003a
+			public const int emailButton = 2131165242;
+			
+			// aapt resource value: 0x7f070038
+			public const int fbButton = 2131165240;
 			
 			// aapt resource value: 0x7f07002c
 			public const int foodButton = 2131165228;
@@ -415,11 +442,20 @@ namespace PoveryAttack
 			// aapt resource value: 0x7f070002
 			public const int normal = 2131165186;
 			
+			// aapt resource value: 0x7f070037
+			public const int phoneBox = 2131165239;
+			
 			// aapt resource value: 0x7f07000d
 			public const int providerListView = 2131165197;
 			
+			// aapt resource value: 0x7f070031
+			public const int providerNameBox = 2131165233;
+			
 			// aapt resource value: 0x7f070003
 			public const int satellite = 2131165187;
+			
+			// aapt resource value: 0x7f07003b
+			public const int servicesBox = 2131165243;
 			
 			// aapt resource value: 0x7f07002d
 			public const int shelterButton = 2131165229;
@@ -481,11 +517,17 @@ namespace PoveryAttack
 			// aapt resource value: 0x7f07002b
 			public const int textView3 = 2131165227;
 			
+			// aapt resource value: 0x7f070032
+			public const int textView31 = 2131165234;
+			
 			// aapt resource value: 0x7f07002f
 			public const int transpoButton = 2131165231;
 			
 			// aapt resource value: 0x7f070030
 			public const int viewAllButton = 2131165232;
+			
+			// aapt resource value: 0x7f070039
+			public const int websiteButton = 2131165241;
 			
 			// aapt resource value: 0x7f070009
 			public const int wide = 2131165193;

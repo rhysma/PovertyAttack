@@ -293,13 +293,18 @@ containing a value of this type.
         public static final int common_plus_signin_btn_text_light_focused=0x7f020027;
         public static final int common_plus_signin_btn_text_light_normal=0x7f020028;
         public static final int common_plus_signin_btn_text_light_pressed=0x7f020029;
-        public static final int food=0x7f02002a;
-        public static final int health=0x7f02002b;
-        public static final int icon=0x7f02002c;
-        public static final int shelter=0x7f02002d;
-        public static final int transportation=0x7f02002e;
+        public static final int email=0x7f02002a;
+        public static final int fb=0x7f02002b;
+        public static final int food=0x7f02002c;
+        public static final int health=0x7f02002d;
+        public static final int icon=0x7f02002e;
+        public static final int shelter=0x7f02002f;
+        public static final int transportation=0x7f020030;
+        public static final int website=0x7f020031;
     }
     public static final class id {
+        public static final int address1Box=0x7f070033;
+        public static final int address2Box=0x7f070034;
         public static final int adjust_height=0x7f070005;
         public static final int adjust_width=0x7f070006;
         public static final int auto=0x7f07000a;
@@ -315,7 +320,11 @@ containing a value of this type.
         public static final int checkTrans=0x7f070016;
         public static final int checkUninsured=0x7f070024;
         public static final int checkVeteran=0x7f070020;
+        public static final int cityBox=0x7f070035;
+        public static final int countyBox=0x7f070036;
         public static final int dark=0x7f07000b;
+        public static final int emailButton=0x7f07003a;
+        public static final int fbButton=0x7f070038;
         public static final int foodButton=0x7f07002c;
         public static final int healthButton=0x7f07002e;
         public static final int hybrid=0x7f070000;
@@ -324,8 +333,11 @@ containing a value of this type.
         public static final int nextButton=0x7f07002a;
         public static final int none=0x7f070001;
         public static final int normal=0x7f070002;
+        public static final int phoneBox=0x7f070037;
         public static final int providerListView=0x7f07000d;
+        public static final int providerNameBox=0x7f070031;
         public static final int satellite=0x7f070003;
+        public static final int servicesBox=0x7f07003b;
         public static final int shelterButton=0x7f07002d;
         public static final int standard=0x7f070008;
         public static final int tableLayout1=0x7f07000e;
@@ -346,8 +358,10 @@ containing a value of this type.
         public static final int terrain=0x7f070004;
         public static final int textView10=0x7f070010;
         public static final int textView3=0x7f07002b;
+        public static final int textView31=0x7f070032;
         public static final int transpoButton=0x7f07002f;
         public static final int viewAllButton=0x7f070030;
+        public static final int websiteButton=0x7f070039;
         public static final int wide=0x7f070009;
     }
     public static final class integer {

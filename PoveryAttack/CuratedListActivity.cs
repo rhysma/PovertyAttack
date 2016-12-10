@@ -67,22 +67,17 @@ namespace PoveryAttack
                 db.Insert(item);
             }
 
-            foreach (var demoItem in demoChecks)
-            {
-                
-            }
 
             //filter the list based on the need and demographic information
-            IEnumerable<Data.ProviderOrg> curatedNeed = from item in items
+            var curatedNeed = from item in items
                           where item.NEED == need
                           select item;
 
-            //IEnumerable<Data.ProviderOrg> curatedDemo = from item in curatedNeed
-            //                                            where demoChecks.Contains(item.DEMOGRAPHICS)
-            //                                            select item;
+            //TO DO:if they don't check any of the boxes on the previous screen we need to not do this step
+            var curatedDemo = curatedNeed.Where(u => demoChecks.Contains(u.DEMOGRAPHICS));
 
             curatedList = new List<Data.ProviderOrg>();
-            foreach (var provider in curatedNeed)
+            foreach (var provider in curatedDemo)
             {
                 curatedList.Add(provider);
             }
