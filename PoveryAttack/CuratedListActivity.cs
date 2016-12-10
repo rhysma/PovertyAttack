@@ -53,19 +53,28 @@ namespace PoveryAttack
 
             try
             {
-                WebClient webClient = new WebClient();
+                var newFileData = string.Empty;
 
-                // Yes, I know this is SUPER BAD but #hackathon
-                webClient.Credentials = new NetworkCredential("otc_poverty", "zCUk7h8f");
+                // Get a WebClient
+                using (WebClient webClient = new WebClient())
+                {
+                    // Yes, I know this is SUPER BAD but #hackathon
+                    webClient.Credentials = new NetworkCredential("otc_poverty", "zCUk7h8f");
 
-                // Get JSON from DB/Server
-                var newFileData = webClient.DownloadString("ftp://ftp.povertyattack.otccompsci.com/povertyattack.otccompsci.com//services.json");
-                ////string jsonString = System.Text.Encoding.UTF8.GetString(newFileData);
-                ////jsonString = jsonString.Replace("\r", "");
-                ////jsonString = jsonString.Replace("\n", "");
-                ////jsonString = jsonString.Replace("\\", "");
-                items = JsonConvert.DeserializeObject<List<ProviderOrg>>(newFileData);
+                    // Get JSON from DB/Server
+                    newFileData = webClient.DownloadString("ftp://ftp.povertyattack.otccompsci.com/povertyattack.otccompsci.com//services.json");
 
+                    // Write the JSON to the local file
+                    ////Android.Content.Res.AssetManager assets = this.Assets;
+                    ////using (StreamWriter writeFile = new StreamWriter(assets.Open("services.json")))
+                    ////{
+                    ////    writeFile.Write(newFileData);
+                    ////}
+
+                    items = JsonConvert.DeserializeObject<List<ProviderOrg>>(newFileData);
+                }
+
+                // If we were not successful
                 if (string.IsNullOrEmpty(newFileData))
                 {
                     // Yep, I'm manually throwing an excption. DWI
