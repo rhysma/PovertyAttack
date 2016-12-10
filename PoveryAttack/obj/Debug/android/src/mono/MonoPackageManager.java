@@ -99,6 +99,7 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "PoveryAttack.dll" comes first in this list. */
 		"PoveryAttack.dll",
+		"Newtonsoft.Json.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_green.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
@@ -115,9 +116,18 @@ class MonoPackageManager_Resources {
 		"System.Runtime.InteropServices.dll",
 		"System.Runtime.Extensions.dll",
 		"System.Reflection.Extensions.dll",
-		"System.Linq.Expressions.dll",
-		"System.Globalization.dll",
+		"System.IO.dll",
 		"System.Threading.Tasks.dll",
+		"System.Xml.XDocument.dll",
+		"System.Globalization.dll",
+		"System.Runtime.Serialization.Primitives.dll",
+		"System.Linq.Expressions.dll",
+		"System.Dynamic.Runtime.dll",
+		"System.ObjectModel.dll",
+		"System.Text.RegularExpressions.dll",
+		"System.Xml.ReaderWriter.dll",
+		"System.Text.Encoding.dll",
+		"System.Text.Encoding.Extensions.dll",
 		"System.Resources.ResourceManager.dll",
 	};
 	public static final String[] Dependencies = new String[]{

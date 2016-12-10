@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PovertyAttack.Core
+namespace PoveryAttack
 {
 
     public enum ContactPref {  Call = 0, Email = 1, InPersonWalkIn = 2, WebsiteSocial = 3 };
