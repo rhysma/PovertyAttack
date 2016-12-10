@@ -94,7 +94,7 @@ namespace PoveryAttack
             //TO DO:if they don't check any of the boxes on the previous screen we need to not do this step
             //curatedDemo = curatedNeed.Where(u => demoChecks.Contains(u.DEMOGRAPHICS));
             var checkList = demoChecks.Where(check => check != null).ToList();
-            var curatedDemo = (from org in curatedNeed from demo in org.DEMOGRAPHICS from check in checkList where demo == check select org).ToList();
+            var curatedDemo = (from org in curatedNeed from demo in org.DEMOGRAPHICS from check in checkList where demo == check select org).ToList().Distinct();
 
             curatedList = new List<ProviderOrg>();
             foreach (var provider in curatedDemo)
